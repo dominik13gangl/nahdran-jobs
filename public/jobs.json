@@ -1,0 +1,245 @@
+{
+  "generatedAt": "2026-08-31T14:28:21.043Z",
+  "origin": "St. Stefan im Rosental",
+  "sourceCount": 10,
+  "jobs": [
+    {
+      "id": "legenstein-housekeeping-bad-gleichenberg",
+      "title": "Housekeeping",
+      "company": "Vulkanlandhotel Legenstein",
+      "location": "Bad Gleichenberg",
+      "distanceKm": 19,
+      "driveMinutes": 24,
+      "employmentType": [
+        "Teilzeit",
+        "Vollzeit"
+      ],
+      "hoursPerWeek": 30,
+      "schedule": "05:30–13:30 · 4–5 Tage/Woche",
+      "morningFriendly": true,
+      "weekendRequired": true,
+      "salary": "ab € 2.026 brutto (Vollzeitbasis)",
+      "salaryMonthlyFullTime": 2026,
+      "fitScore": 86,
+      "fitReasons": [
+        "Arbeit endet laut Inserat um 13:30 Uhr",
+        "Teilzeit ist ausdrücklich möglich",
+        "Gastro-Erfahrung und Verlässlichkeit sind gut übertragbar",
+        "Fahrt bleibt innerhalb des gewünschten Radius"
+      ],
+      "concerns": [
+        "Sehr früher Dienstbeginn um 05:30 Uhr",
+        "Hotelbetrieb kann Wochenenddienste erfordern"
+      ],
+      "requirements": [
+        "Verlässliche und sorgfältige Arbeitsweise",
+        "Bewusstsein für Hygiene",
+        "Freude an selbstständiger Arbeit"
+      ],
+      "tasks": [
+        "Reinigung der Hotelzimmer",
+        "Reinigung des Wellnessbereichs",
+        "Hygienekontrollen",
+        "Waschen und Trocknen von Sauna- und Badetüchern"
+      ],
+      "contact": {
+        "name": "Andrea Legenstein",
+        "phone": "+43 3159 2220",
+        "email": "info@legenstein.at"
+      },
+      "source": "Firmenwebsite",
+      "sourceUrl": "https://jobs.legenstein.at/offene-stellen/reinigungskraft",
+      "applyUrl": "https://jobs.legenstein.at/deine-bewerbung",
+      "checkedAt": "2026-08-31T14:28:21.043Z",
+      "status": "active",
+      "missingChecks": 0
+    },
+    {
+      "id": "dussmann-reinigung-mureck-14813",
+      "title": "Reinigungskraft (m/w/d)",
+      "company": "Dussmann Austria",
+      "location": "Mureck",
+      "distanceKm": 25,
+      "driveMinutes": 29,
+      "employmentType": [
+        "Geringfügig",
+        "Teilzeit"
+      ],
+      "hoursPerWeek": 5,
+      "schedule": "5 Std./Woche · genaue Lage nach Vereinbarung",
+      "morningFriendly": false,
+      "weekendRequired": false,
+      "salary": "im Inserat nicht konkret angegeben",
+      "fitScore": 84,
+      "fitReasons": [
+        "Nur 5 Wochenstunden",
+        "Teilzeit direkt in Mureck",
+        "Keine spezielle Ausbildung genannt",
+        "Gastro-Erfahrung passt zu Service- und Hygienestandards"
+      ],
+      "concerns": [
+        "Arbeitszeitlage muss direkt geklärt werden",
+        "Gehalt ist in der Quelle nicht konkret ausgewiesen"
+      ],
+      "requirements": [
+        "Gepflegtes und höfliches Auftreten",
+        "Sorgfältige Arbeitsweise",
+        "Verlässlichkeit"
+      ],
+      "tasks": [
+        "Sauberkeit und Ordnung am Standort sicherstellen",
+        "Reinigungsarbeiten nach Objektplan"
+      ],
+      "source": "XING / Arbeitgeberlink",
+      "sourceUrl": "https://www.xing.com/jobs/mureck-reinigungskraft-id-14813-155943465",
+      "applyUrl": "https://www.xing.com/jobs/mureck-reinigungskraft-id-14813-155943465",
+      "postedAt": "2026-07-01",
+      "checkedAt": "2026-08-31T14:28:21.043Z",
+      "status": "uncertain",
+      "missingChecks": 2
+    },
+    {
+      "id": "legenstein-rezeption-bad-gleichenberg",
+      "title": "Rezeptionist:in",
+      "company": "Vulkanlandhotel Legenstein",
+      "location": "Bad Gleichenberg",
+      "distanceKm": 19,
+      "driveMinutes": 24,
+      "employmentType": [
+        "Teilzeit",
+        "Vollzeit"
+      ],
+      "hoursPerWeek": 40,
+      "schedule": "5 Tage/Woche · Teilzeit nach Vereinbarung",
+      "morningFriendly": false,
+      "weekendRequired": true,
+      "salary": "ab € 2.159 brutto (40 Std.)",
+      "salaryMonthlyFullTime": 2159,
+      "fitScore": 76,
+      "fitReasons": [
+        "Teilzeit für Wiedereinsteiger:innen ausdrücklich möglich",
+        "Gästekontakt nutzt vorhandene Gastro-Erfahrung",
+        "Word- und Excel-Kenntnisse sind ein Einstieg Richtung Büro",
+        "Regelmäßige freie Wochenenden werden zugesagt"
+      ],
+      "concerns": [
+        "Konkrete Vormittagszeiten müssen vereinbart werden",
+        "Ein Teil der Wochenenden kann im Dienstplan liegen"
+      ],
+      "requirements": [
+        "Freundliches Auftreten",
+        "Computerkenntnisse in Word und Excel",
+        "Gute Englischkenntnisse",
+        "Selbstständigkeit und Zuverlässigkeit"
+      ],
+      "tasks": [
+        "Check-in und Check-out",
+        "Gästebetreuung vor Ort, telefonisch und per E-Mail",
+        "Tägliche Organisation",
+        "Infomaterial gestalten"
+      ],
+      "contact": {
+        "name": "Andrea Legenstein",
+        "phone": "+43 3159 2220",
+        "email": "info@legenstein.at"
+      },
+      "source": "Firmenwebsite",
+      "sourceUrl": "https://jobs.legenstein.at/jobs/rezeptionist-in",
+      "applyUrl": "https://jobs.legenstein.at/deine-bewerbung",
+      "checkedAt": "2026-08-31T14:28:21.043Z",
+      "status": "active",
+      "missingChecks": 0
+    },
+    {
+      "id": "billa-kassa-feldbach",
+      "title": "Verkäufer:in Fokus Kassa",
+      "company": "BILLA AG",
+      "location": "Feldbach",
+      "distanceKm": 14,
+      "driveMinutes": 18,
+      "employmentType": [
+        "Teilzeit"
+      ],
+      "schedule": "Teilzeit · Dienstplan laut Filiale",
+      "morningFriendly": false,
+      "weekendRequired": true,
+      "salary": "ab € 2.251 brutto (Vollzeitbasis)",
+      "salaryMonthlyFullTime": 2251,
+      "fitScore": 69,
+      "fitReasons": [
+        "Kurze Fahrt nach Feldbach",
+        "Gastro-Erfahrung wird als Vorteil genannt",
+        "Teilzeit ist ausgeschrieben",
+        "Kundenkontakt entspricht bisheriger Praxis"
+      ],
+      "concerns": [
+        "Vormittagsmodell ist nicht zugesagt",
+        "Samstagsdienste sind im Handel wahrscheinlich und zu klären"
+      ],
+      "requirements": [
+        "Freude am Umgang mit Menschen",
+        "Genauigkeit an der Kassa",
+        "Erste Erfahrung in Handel oder Gastronomie von Vorteil",
+        "Deutschkenntnisse"
+      ],
+      "tasks": [
+        "Kassieren",
+        "Kundenbetreuung",
+        "Warenpräsentation",
+        "Unterstützung im Markt"
+      ],
+      "source": "karriere.at",
+      "sourceUrl": "https://www.karriere.at/jobs/b%C3%BCroassistenz/feldbach",
+      "applyUrl": "https://www.karriere.at/jobs/b%C3%BCroassistenz/feldbach",
+      "postedAt": "2026-08-28",
+      "checkedAt": "2026-08-31T14:28:21.043Z",
+      "status": "active",
+      "missingChecks": 0
+    },
+    {
+      "id": "bipa-verkauf-muehldorf",
+      "title": "Mitarbeiter:in Verkauf",
+      "company": "BIPA",
+      "location": "Mühldorf bei Feldbach",
+      "distanceKm": 18,
+      "driveMinutes": 23,
+      "employmentType": [
+        "Teilzeit"
+      ],
+      "schedule": "Teilzeit · Dienstplan laut Filiale",
+      "morningFriendly": false,
+      "weekendRequired": true,
+      "salary": "ab € 2.251 brutto (Vollzeitbasis)",
+      "salaryMonthlyFullTime": 2251,
+      "fitScore": 67,
+      "fitReasons": [
+        "Gute Erreichbarkeit",
+        "Gastro-Erfahrung wird ausdrücklich berücksichtigt",
+        "Teilzeitstelle",
+        "Beratung und Kundenkontakt passen zum bisherigen Profil"
+      ],
+      "concerns": [
+        "Mindestens zwei Jahre Erfahrung in Handel oder Gastro gefordert",
+        "Vormittags- und Wochenendmodell muss geklärt werden"
+      ],
+      "requirements": [
+        "Mindestens zwei Jahre Erfahrung in Handel oder Gastronomie",
+        "Freude an Beratung und aktivem Verkauf",
+        "Verlässlichkeit"
+      ],
+      "tasks": [
+        "Kunden beraten",
+        "Produkte aktiv verkaufen",
+        "Waren präsentieren",
+        "Filialteam unterstützen"
+      ],
+      "source": "karriere.at",
+      "sourceUrl": "https://www.karriere.at/jobs/b%C3%BCroassistenz/feldbach",
+      "applyUrl": "https://www.karriere.at/jobs/b%C3%BCroassistenz/feldbach",
+      "postedAt": "2026-08-27",
+      "checkedAt": "2026-08-31T14:28:21.043Z",
+      "status": "active",
+      "missingChecks": 0
+    }
+  ]
+}

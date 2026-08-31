@@ -1,0 +1,41 @@
+name: Jobs täglich aktualisieren
+
+on:
+  schedule:
+    - cron: '15 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run jobs:update
+      - run: npm test
+      - run: npm run build
+      - name: Änderungen speichern
+        run: |
+          git config user.name "nahdran-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add public/jobs.json
+          git diff --cached --quiet || git commit -m "chore: tägliche Jobs aktualisieren"
+          git push
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - uses: actions/deploy-pages@v4
+        id: deployment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "karriere.at – Büro Feldbach",
+    "url": "https://www.karriere.at/jobs/b%C3%BCroassistenz/feldbach",
+    "kind": "discovery",
+    "enabled": true
+  },
+  {
+    "name": "karriere.at – Teilzeit Feldbach",
+    "url": "https://www.karriere.at/jobs/teilzeit/feldbach",
+    "kind": "discovery",
+    "enabled": true
+  },
+  {
+    "name": "MeinJob Südoststeiermark",
+    "url": "https://www.meinjob-suedoststeiermark.at/firmen/gemeinde-st-stefan",
+    "kind": "discovery",
+    "enabled": true
+  },
+  {
+    "name": "jobs.at – Teilzeit Feldbach",
+    "url": "https://www.jobs.at/j/teilzeit/feldbach",
+    "kind": "discovery",
+    "enabled": true
+  },
+  {
+    "name": "jobs.at – Region Feldbach",
+    "url": "https://www.jobs.at/j/-/feldbach",
+    "kind": "discovery",
+    "enabled": true
+  },
+  {
+    "name": "Gemeinde St. Stefan",
+    "url": "https://joom.gemeinde.st.stefan.at/index.php/aktuelles/stellenausschreibung-marktgemeinde",
+    "kind": "monitor",
+    "enabled": true
+  },
+  {
+    "name": "Vulkanlandhotel Legenstein",
+    "url": "https://jobs.legenstein.at/offene-stellen",
+    "kind": "discovery",
+    "enabled": true
+  },
+  {
+    "name": "Legenstein – Housekeeping",
+    "url": "https://jobs.legenstein.at/offene-stellen/reinigungskraft",
+    "kind": "monitor",
+    "enabled": true
+  },
+  {
+    "name": "Legenstein – Rezeption",
+    "url": "https://jobs.legenstein.at/jobs/rezeptionist-in",
+    "kind": "monitor",
+    "enabled": true
+  },
+  {
+    "name": "Dussmann Mureck",
+    "url": "https://www.xing.com/jobs/mureck-reinigungskraft-id-14813-155943465",
+    "kind": "monitor",
+    "enabled": true
+  }
+]
