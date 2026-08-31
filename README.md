@@ -66,13 +66,12 @@ Eine öffentliche Such- oder Firmenseite in `config/sources.json` ergänzen. Sei
 
 ## Veröffentlichung
 
-Nach dem Push in ein GitHub-Repository:
+Die Automatisierung liegt in zwei überprüfbaren Workflows:
 
-1. **Settings → Pages → Source: GitHub Actions** wählen.
-2. Den Workflow **Webseite veröffentlichen** einmal manuell starten oder auf `main` pushen.
-3. Unter **Actions** prüfen, dass **Jobs täglich aktualisieren** aktiviert ist.
+- [Jobs täglich aktualisieren](.github/workflows/daily-jobs.yml) prüft jeden Tag um 04:15 UTC alle Quellen, testet und baut die App, versioniert geänderte Jobdaten und veröffentlicht den geprüften Stand.
+- [Webseite veröffentlichen](.github/workflows/deploy.yml) testet jeden neuen `main`-Stand erneut und veröffentlicht ausschließlich den erfolgreichen Build auf GitHub Pages.
 
-Die erzeugte GitHub-Pages-URL kann anschließend direkt geteilt und am Home-Bildschirm des Handys gespeichert werden.
+Der Veröffentlichungsworkflow läuft nach jedem Push auf `main` sowie nach jedem erfolgreichen Tageslauf. Die erzeugte GitHub-Pages-URL kann direkt geteilt und am Home-Bildschirm des Handys gespeichert werden.
 
 ## Datenschutz
 
