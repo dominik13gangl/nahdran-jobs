@@ -1,4 +1,4 @@
-import { BriefcaseBusiness, CarFront, Clock3, RotateCcw, Search, SlidersHorizontal } from 'lucide-react'
+import { BriefcaseBusiness, CalendarOff, CarFront, Clock3, RotateCcw, Search, SlidersHorizontal } from 'lucide-react'
 import { defaultFilters, type FilterState } from '../filter-config'
 
 type Props = { filters: FilterState; onChange: (filters: FilterState) => void; resultCount: number }
@@ -24,6 +24,9 @@ export function Filters({ filters, onChange, resultCount }: Props) {
       </button>
       <button className={`filter-toggle ${filters.partTimeOnly ? 'selected' : ''}`} onClick={() => set('partTimeOnly', !filters.partTimeOnly)} aria-pressed={filters.partTimeOnly}>
         <SlidersHorizontal size={19} /><span><b>Teilzeit</b><small>& geringfügig</small></span>
+      </button>
+      <button className={`filter-toggle ${filters.weekendFreeOnly ? 'selected' : ''}`} onClick={() => set('weekendFreeOnly', !filters.weekendFreeOnly)} aria-pressed={filters.weekendFreeOnly}>
+        <CalendarOff size={19} /><span><b>Ohne Wochenende</b><small>bekannte Konflikte ausblenden</small></span>
       </button>
       <div className="filter-summary">
         <span><strong>{resultCount}</strong> passende {resultCount === 1 ? 'Stelle' : 'Stellen'}</span>

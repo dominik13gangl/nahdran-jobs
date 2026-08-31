@@ -4,8 +4,9 @@ export type FilterState = {
   maxDrive: number
   morningOnly: boolean
   partTimeOnly: boolean
+  weekendFreeOnly: boolean
 }
 
 export const defaultFilters: FilterState = {
-  query: '', location: '', maxDrive: 40, morningOnly: false, partTimeOnly: true,
+  query: '', location: '', maxDrive: 40, morningOnly: false, partTimeOnly: false, weekendFreeOnly: false,
 }

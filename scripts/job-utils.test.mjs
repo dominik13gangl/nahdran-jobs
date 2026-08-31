@@ -1,6 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { canonicalKey, dedupeJobs, enrichPortalJob, extractJobSections, fromJsonLd, jsonLdObjects, karriereDetailState, parseJobsAt, parseKarriereAt, scoreJob } from './job-utils.mjs'
+import { canonicalKey, dedupeJobs, enrichPortalJob, extractJobSections, fromJsonLd, jsonLdObjects, karriereDetailState, matchTier, parseJobsAt, parseKarriereAt, parseWillhaben, scoreJob, travelForLocation } from './job-utils.mjs'
 
 test('normalisiert geschlechtsneutrale Titel für Dubletten', () => {
   const a = { title: 'Verkäufer:in (m/w/d)', company: 'BILLA AG', location: 'Feldbach' }
@@ -79,6 +79,25 @@ test('vereinheitlicht Portal-Titel mit Stunden und Rechtsformen', () => {
   assert.equal(canonicalKey(a), canonicalKey(b))
 })
 
+test('ignoriert doppelt ausgegebene Ortsnamen bei Dubletten', () => {
+  const a = { title: 'Mitarbeiter:in Verkauf', company: 'Test GmbH', location: 'Feldbach, Feldbach' }
+  const b = { title: 'Mitarbeiter:in Verkauf', company: 'Test GmbH', location: 'Feldbach' }
+  assert.equal(canonicalKey(a), canonicalKey(b))
+})
+
+test('erkennt unterschiedliche Schreibweisen derselben Firmenrechtsform', () => {
+  const a = { title: 'Mitarbeiter:in Verkauf', company: 'BIPA Parfumerien Gesellschaft m.b.H.', location: 'Mühldorf bei Feldbach' }
+  const b = { title: 'Mitarbeiter/in Verkauf', company: 'BIPA Parfümerien GmbH', location: 'Mühldorf bei Feldbach' }
+  assert.equal(canonicalKey(a), canonicalKey(b))
+})
+
+test('behält eine Quellen-ID auch bei korrigiertem Arbeitsort als denselben Job', () => {
+  const base = { title: 'Lagerarbeiter/in Kirchbach', company: 'Agrarunion Südost', provider: 'meinjob-suedoststeiermark.at', sourceJobId: '697', sourceUrl: 'https://example.test/firma#heading-697' }
+  const jobs = dedupeJobs([{ ...base, location: 'Feldbach' }, { ...base, location: 'Kirchbach', checkedAt: '2026-08-31T12:00:00Z' }])
+  assert.equal(jobs.length, 1)
+  assert.equal(jobs[0].location, 'Kirchbach')
+})
+
 test('extrahiert Aufgaben und Anforderungen aus semantischen Abschnitten', () => {
   const html = `<h4>IHRE AUFGABEN</h4><ul><li>Kundinnen beraten</li><li>Waren präsentieren</li></ul><h4>IHR PROFIL</h4><ul><li>Freude am Umgang mit Menschen</li><li>Gastro-Erfahrung von Vorteil</li></ul>`
   assert.deepEqual(extractJobSections(html), {
@@ -96,4 +115,96 @@ test('reichert einen Portaltreffer mit JSON-LD-Details an', () => {
   assert.deepEqual(result.requirements, ['Freude am Kontakt'])
   assert.match(result.salary, /2\D*251/)
   assert.equal(result.applyUrl, 'https://bewerbung.example/job-1')
+})
+
+test('entfernt undefined aus JSON-LD-Kontaktnamen und behält vorhandene Kontaktdaten', () => {
+  const base = { title: 'Servicekraft', company: 'Test', location: 'Mureck', driveMinutes: 29, employmentType: ['Teilzeit'], schedule: 'Teilzeit', salary: 'im Inserat nicht konkret angegeben', morningFriendly: false, weekendRequired: false, tasks: ['Aufgaben prüfen'], requirements: ['Anforderungen prüfen'], concerns: [], fitReasons: [], sourceUrl: 'https://www.willhaben.at/jobs/job/servicekraft/123', applyUrl: 'https://www.willhaben.at/jobs/job/servicekraft/123', contact: { email: 'alt@example.at' } }
+  const html = `<script type="application/ld+json">${JSON.stringify({ '@type': 'JobPosting', title: 'Servicekraft', hiringOrganization: { contactPoint: { name: 'UNDEFINED Lena H.' } } })}</script>`
+  const result = enrichPortalJob(base, html, '2026-08-31T12:00:00Z')
+  assert.deepEqual(result.contact, { name: 'Lena H.', email: 'alt@example.at', phone: undefined })
+})
+
+test('unterdrückt leere oder ausschließlich undefined lautende Kontaktnamen', () => {
+  const base = { title: 'Servicekraft', company: 'Test', location: 'Mureck', driveMinutes: 29, employmentType: ['Teilzeit'], schedule: 'Teilzeit', salary: 'im Inserat nicht konkret angegeben', morningFriendly: false, weekendRequired: false, tasks: ['Aufgaben prüfen'], requirements: ['Anforderungen prüfen'], concerns: [], fitReasons: [], sourceUrl: 'https://www.willhaben.at/jobs/job/servicekraft/123', applyUrl: 'https://www.willhaben.at/jobs/job/servicekraft/123' }
+  for (const name of ['undefined', '   ']) {
+    const html = `<script type="application/ld+json">${JSON.stringify({ '@type': 'JobPosting', title: 'Servicekraft', hiringOrganization: { contactPoint: { name } } })}</script>`
+    assert.equal(enrichPortalJob(base, html, '2026-08-31T12:00:00Z').contact, undefined)
+  }
+})
+
+test('übernimmt bei Willhaben keine fremde eingebettete Werbe-URL als Bewerbung', () => {
+  const base = { title: 'Servicekraft', company: 'Test', location: 'Mureck', driveMinutes: 29, employmentType: ['Teilzeit'], schedule: 'Teilzeit', salary: 'im Inserat nicht konkret angegeben', morningFriendly: false, weekendRequired: false, tasks: ['Aufgaben prüfen'], requirements: ['Anforderungen prüfen'], concerns: [], fitReasons: [], sourceUrl: 'https://www.willhaben.at/jobs/job/servicekraft/123', applyUrl: 'https://www.willhaben.at/jobs/job/servicekraft/123' }
+  const html = `<script type="application/ld+json">${JSON.stringify({ '@type': 'JobPosting', title: 'Servicekraft', description: 'Ihre Aufgaben: Gäste begrüßen. Ihr Profil: Freude am Kontakt. Wir bieten ein gutes Team.' })}</script><script>window.__ad={"applyUrl":"https://werbung.example/bild"}</script>`
+  const result = enrichPortalJob(base, html, '2026-08-31T12:00:00Z')
+  assert.equal(result.applyUrl, base.applyUrl)
+  assert.deepEqual(result.tasks, ['Gäste begrüßen.'])
+  assert.deepEqual(result.requirements, ['Freude am Kontakt.'])
+})
+
+test('liest Willhaben-Treffer aus dem eingebetteten Next-Datenblock', () => {
+  const data = {
+    props: { pageProps: { jobsSearchResultRoot: { data: { entries: [{
+      id: 13253194,
+      title: 'Kellner (w/m/d)',
+      slugTitle: 'kellner-w-m-d',
+      firstPublishDate: '2026-08-31T08:00:00',
+      isExpired: false,
+      position: 'Mitarbeiter:in',
+      jobLocations: [{ name: 'Österreich' }, { name: 'Feldbach' }, { name: 'Gnas' }],
+      company: { title: 'DACH Gastro GmbH' },
+      salary: 2026,
+      salaryTimeFrame: 'monatlich',
+      employmentModes: ['Geringfügig', 'Teilzeit'],
+    }] } } } },
+  }
+  const html = `<script id="__NEXT_DATA__" type="application/json">${JSON.stringify(data)}</script>`
+  const [job] = parseWillhaben(html, { name: 'willhaben Teilzeit', provider: 'willhaben.at', kind: 'discovery', url: 'https://www.willhaben.at/jobs/suche/teilzeit/suedoststeiermark' }, '2026-08-31T12:00:00Z')
+  assert.equal(job.location, 'Feldbach / Gnas')
+  assert.equal(job.driveMinutes, 14)
+  assert.equal(job.distanceEstimated, true)
+  assert.deepEqual(job.employmentType, ['Geringfügig', 'Teilzeit'])
+  assert.equal(job.provider, 'willhaben.at')
+  assert.equal(job.discoveryUrl, 'https://www.willhaben.at/jobs/suche/teilzeit/suedoststeiermark')
+  assert.equal(job.sourceUrl, 'https://www.willhaben.at/jobs/job/kellner-w-m-d/13253194')
+})
+
+test('bildet Willhaben-Gehaltseinheiten korrekt ab und erfindet für unbekannte Einheiten keinen Monat', () => {
+  const entries = [
+    { id: 1, salary: 17.51, salaryTimeFrame: 'stündlich', expected: 'ab € 17,51 brutto/Stunde' },
+    { id: 2, salary: 2251, salaryTimeFrame: 'monatlich', expected: `ab € ${Number(2251).toLocaleString('de-AT')} brutto/Monat` },
+    { id: 3, salary: { value: 42000, type: 'yearly' }, expected: `ab € ${Number(42000).toLocaleString('de-AT')} brutto/Jahr` },
+    { id: 4, salary: { amount: 600, timeframe: 'wöchentlich' }, expected: 'ab € 600 brutto/Woche' },
+    { id: 5, salary: 33, salaryTimeFrame: 'nach Vereinbarung', expected: 'ab € 33 brutto' },
+  ]
+  const data = {
+    props: { pageProps: { jobsSearchResultRoot: { data: { entries: entries.map(entry => ({
+      ...entry,
+      title: `Testjob ${entry.id}`,
+      slugTitle: `testjob-${entry.id}`,
+      isExpired: false,
+      jobLocations: [{ name: 'Gnas' }],
+      company: { title: 'Test GmbH' },
+      employmentModes: ['Teilzeit'],
+    })) } } } },
+  }
+  const html = `<script id="__NEXT_DATA__" type="application/json">${JSON.stringify(data)}</script>`
+  const jobs = parseWillhaben(html, { name: 'willhaben', provider: 'willhaben.at', kind: 'discovery', url: 'https://www.willhaben.at/jobs/suche/suedoststeiermark' }, '2026-08-31T12:00:00Z')
+  assert.deepEqual(jobs.map(job => job.salary), entries.map(entry => entry.expected))
+})
+
+test('behandelt fehlende Beschäftigungsart und unbekannte Orte nicht als Vollzeit oder erfundene 45 Minuten', () => {
+  const job = fromJsonLd({ '@type': 'JobPosting', title: 'Aushilfe', hiringOrganization: { name: 'Test' }, jobLocation: { address: { addressLocality: 'Unbekannter Ort' } } }, { name: 'Direkt', url: 'https://example.test/jobs', kind: 'discovery' }, '2026-08-31T12:00:00Z')
+  assert.deepEqual(job.employmentType, ['Unbekannt'])
+  assert.equal(job.driveMinutes, 60)
+  assert.equal(job.distanceEstimated, true)
+  assert.deepEqual(travelForLocation('Region Südoststeiermark'), { driveMinutes: 40, distanceEstimated: true })
+})
+
+test('setzt Nachtschicht und explizites Wochenende nicht in die besten Treffer', () => {
+  const night = { title: 'Produktionshelfer Nachtschicht', employmentType: ['Teilzeit'], schedule: '18:00–05:00', morningFriendly: false, weekendRequired: false, driveMinutes: 3, salary: '€ 2.400 brutto' }
+  const weekend = { title: 'Reinigung', employmentType: ['Teilzeit'], schedule: 'vormittags', morningFriendly: true, weekendRequired: true, driveMinutes: 15, salary: '€ 2.100 brutto' }
+  night.fitScore = scoreJob(night)
+  weekend.fitScore = scoreJob(weekend)
+  assert.equal(matchTier(night), 'review')
+  assert.equal(matchTier(weekend), 'review')
 })

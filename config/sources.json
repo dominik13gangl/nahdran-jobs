@@ -1,99 +1,229 @@
 [
   {
+    "id": "karriere-office-feldbach",
     "name": "karriere.at – Büro Feldbach",
+    "provider": "karriere.at",
     "url": "https://www.karriere.at/jobs/b%C3%BCroassistenz/feldbach",
     "kind": "discovery",
     "adapter": "karriere-at",
     "enabled": true
   },
   {
+    "id": "karriere-parttime-feldbach",
     "name": "karriere.at – Teilzeit Feldbach",
+    "provider": "karriere.at",
     "url": "https://www.karriere.at/jobs/teilzeit/feldbach",
     "kind": "discovery",
     "adapter": "karriere-at",
     "enabled": true
   },
   {
+    "id": "karriere-sales-feldbach",
     "name": "karriere.at – Verkauf Feldbach",
+    "provider": "karriere.at",
     "url": "https://www.karriere.at/jobs/verk%C3%A4ufer/feldbach",
     "kind": "discovery",
     "adapter": "karriere-at",
     "enabled": true
   },
   {
+    "id": "karriere-marginal-feldbach",
     "name": "karriere.at – Geringfügig Feldbach",
+    "provider": "karriere.at",
     "url": "https://www.karriere.at/jobs/geringf%C3%BCgig/feldbach",
     "kind": "discovery",
     "adapter": "karriere-at",
     "enabled": true
   },
   {
+    "id": "karriere-secretary-feldbach",
     "name": "karriere.at – Sekretariat Feldbach",
+    "provider": "karriere.at",
     "url": "https://www.karriere.at/jobs/sekretariat/feldbach",
     "kind": "discovery",
     "adapter": "karriere-at",
     "enabled": true
   },
   {
+    "id": "karriere-hospitality-feldbach",
     "name": "karriere.at – Gastronomie Feldbach",
+    "provider": "karriere.at",
     "url": "https://www.karriere.at/jobs/gastronomie/feldbach",
     "kind": "discovery",
     "adapter": "karriere-at",
     "enabled": true
   },
   {
+    "id": "karriere-bipa-muehldorf",
     "name": "BIPA Mühldorf – Direktanzeige",
+    "provider": "karriere.at",
     "url": "https://www.karriere.at/jobs/7865401",
     "kind": "monitor",
     "adapter": "karriere-detail",
     "enabled": true
   },
   {
-    "name": "MeinJob Südoststeiermark",
-    "url": "https://www.meinjob-suedoststeiermark.at/firmen/gemeinde-st-stefan",
+    "id": "willhaben-parttime-region",
+    "name": "willhaben – Teilzeit Südoststeiermark",
+    "provider": "willhaben.at",
+    "url": "https://www.willhaben.at/jobs/suche/teilzeit/suedoststeiermark",
     "kind": "discovery",
+    "adapter": "willhaben",
     "enabled": true
   },
   {
+    "id": "willhaben-hospitality-region",
+    "name": "willhaben – Gastro & Hilfskräfte Südoststeiermark",
+    "provider": "willhaben.at",
+    "url": "https://www.willhaben.at/jobs/suche/gastgewerbe-tourismus-freizeit-hilfskraefte/suedoststeiermark",
+    "kind": "discovery",
+    "adapter": "willhaben",
+    "enabled": true
+  },
+  {
+    "id": "willhaben-region-1",
+    "name": "willhaben – Südoststeiermark Seite 1",
+    "provider": "willhaben.at",
+    "url": "https://www.willhaben.at/jobs/suche/suedoststeiermark",
+    "kind": "discovery",
+    "adapter": "willhaben",
+    "enabled": true
+  },
+  {
+    "id": "willhaben-region-2",
+    "name": "willhaben – Südoststeiermark Seite 2",
+    "provider": "willhaben.at",
+    "url": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=2",
+    "kind": "discovery",
+    "adapter": "willhaben",
+    "enabled": true
+  },
+  {
+    "id": "willhaben-region-3",
+    "name": "willhaben – Südoststeiermark Seite 3",
+    "provider": "willhaben.at",
+    "url": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=3",
+    "kind": "discovery",
+    "adapter": "willhaben",
+    "enabled": true
+  },
+  {
+    "id": "willhaben-region-4",
+    "name": "willhaben – Südoststeiermark Seite 4",
+    "provider": "willhaben.at",
+    "url": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=4",
+    "kind": "discovery",
+    "adapter": "willhaben",
+    "enabled": true
+  },
+  {
+    "id": "meinjob-regional-feed",
+    "name": "MeinJob Südoststeiermark – Regionalfeed",
+    "provider": "meinjob-suedoststeiermark.at",
+    "url": "https://www.meinjob-suedoststeiermark.at/jobs-lehre/jobs/load-jobs",
+    "kind": "discovery",
+    "adapter": "meinjob-feed",
+    "enabled": true
+  },
+  {
+    "id": "steirerjobs-parttime-region-1",
+    "name": "Steirerjobs – Teilzeit Süd-/Südoststeiermark",
+    "provider": "steirerjobs.at",
+    "url": "https://www.steirerjobs.at/jobs/sued-suedoststeiermark/teilzeit",
+    "kind": "discovery",
+    "adapter": "steirerjobs",
+    "enabled": true
+  },
+  {
+    "id": "steirerjobs-parttime-region-2",
+    "name": "Steirerjobs – Teilzeit Region Seite 2",
+    "provider": "steirerjobs.at",
+    "url": "https://www.steirerjobs.at/jobs/sued-suedoststeiermark/teilzeit?page=2",
+    "kind": "discovery",
+    "adapter": "steirerjobs",
+    "enabled": true
+  },
+  {
+    "id": "steirerjobs-office-region-1",
+    "name": "Steirerjobs – Büro & Assistenz Region",
+    "provider": "steirerjobs.at",
+    "url": "https://www.steirerjobs.at/jobs/sued-suedoststeiermark/buero-verwaltung-assistenz",
+    "kind": "discovery",
+    "adapter": "steirerjobs",
+    "enabled": true
+  },
+  {
+    "id": "steirerjobs-office-region-2",
+    "name": "Steirerjobs – Büro & Assistenz Seite 2",
+    "provider": "steirerjobs.at",
+    "url": "https://www.steirerjobs.at/jobs/sued-suedoststeiermark/buero-verwaltung-assistenz?page=2",
+    "kind": "discovery",
+    "adapter": "steirerjobs",
+    "enabled": true
+  },
+  {
+    "id": "go-gnas-jobs",
+    "name": "GO GNAS – Freie Arbeitsstellen",
+    "provider": "GO GNAS",
+    "url": "https://www.gnas.gv.at/sites/freie-arbeitsstellen",
+    "kind": "discovery",
+    "adapter": "go-gnas",
+    "enabled": true
+  },
+  {
+    "id": "jobs-at-parttime-feldbach",
     "name": "jobs.at – Teilzeit Feldbach",
+    "provider": "jobs.at",
     "url": "https://www.jobs.at/j/teilzeit/feldbach",
     "kind": "discovery",
     "adapter": "jobs-at",
     "enabled": true
   },
   {
+    "id": "jobs-at-region-feldbach",
     "name": "jobs.at – Region Feldbach",
+    "provider": "jobs.at",
     "url": "https://www.jobs.at/j/-/feldbach",
     "kind": "discovery",
     "adapter": "jobs-at",
     "enabled": true
   },
   {
+    "id": "municipality-st-stefan",
     "name": "Gemeinde St. Stefan",
+    "provider": "Gemeinde St. Stefan",
     "url": "https://joom.gemeinde.st.stefan.at/index.php/aktuelles/stellenausschreibung-marktgemeinde",
     "kind": "monitor",
     "enabled": true
   },
   {
+    "id": "legenstein-overview",
     "name": "Vulkanlandhotel Legenstein",
+    "provider": "Vulkanlandhotel Legenstein",
     "url": "https://jobs.legenstein.at/offene-stellen",
     "kind": "discovery",
     "enabled": true
   },
   {
+    "id": "legenstein-housekeeping",
     "name": "Legenstein – Housekeeping",
+    "provider": "Vulkanlandhotel Legenstein",
     "url": "https://jobs.legenstein.at/offene-stellen/reinigungskraft",
     "kind": "monitor",
     "enabled": true
   },
   {
+    "id": "legenstein-reception",
     "name": "Legenstein – Rezeption",
+    "provider": "Vulkanlandhotel Legenstein",
     "url": "https://jobs.legenstein.at/jobs/rezeptionist-in",
     "kind": "monitor",
     "enabled": true
   },
   {
+    "id": "xing-dussmann-mureck",
     "name": "Dussmann Mureck",
+    "provider": "XING Jobs",
     "url": "https://www.xing.com/jobs/mureck-reinigungskraft-id-14813-155943465",
     "kind": "monitor",
     "enabled": true
