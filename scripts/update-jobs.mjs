@@ -1,5 +1,5 @@
 import { readFile, writeFile } from 'node:fs/promises'
-import { canonicalKey, dedupeJobs, fromJsonLd, jsonLdObjects, normalize, parseJobsAt, parseKarriereAt } from './job-utils.mjs'
+import { canonicalKey, dedupeJobs, enrichPortalJob, fromJsonLd, jsonLdObjects, karriereDetailState, normalize, parseJobsAt, parseKarriereAt } from './job-utils.mjs'
 
 const root = new URL('../', import.meta.url)
 const sources = JSON.parse(await readFile(new URL('config/sources.json', root), 'utf8')).filter(source => source.enabled)
@@ -23,11 +23,30 @@ for (const source of sources) {
     const html = await response.text()
     successfulUrls.add(source.url)
     pageTexts.set(source.url, normalize(html))
+    if (source.adapter === 'karriere-detail' && karriereDetailState(html) === 'inactive') {
+      permanentlyGoneUrls.add(source.url)
+      continue
+    }
     for (const object of jsonLdObjects(html)) discovered.push(fromJsonLd(object, source, checkedAt))
     if (source.adapter === 'karriere-at') discovered.push(...parseKarriereAt(html, source, checkedAt))
     if (source.adapter === 'jobs-at') discovered.push(...parseJobsAt(html, source, checkedAt))
   } catch (error) {
     errors.push(`${source.name}: ${error.message}`)
+  }
+}
+
+const detailCandidates = dedupeJobs(discovered)
+  .filter(job => job.driveMinutes <= 40 && job.fitScore >= 50)
+  .filter(job => /karriere\.at\/jobs\/\d+|jobs\.at\/i\/\d+/.test(job.sourceUrl))
+  .slice(0, 12)
+
+for (const job of detailCandidates) {
+  try {
+    const response = await fetch(job.sourceUrl, { headers: { 'user-agent': 'NahdranJobMonitor/0.1 (+private family job search)', accept: 'text/html,application/xhtml+xml' }, signal: AbortSignal.timeout(20000) })
+    if (!response.ok) continue
+    discovered.push(enrichPortalJob(job, await response.text(), checkedAt))
+  } catch (error) {
+    errors.push(`Detail ${job.sourceUrl}: ${error.message}`)
   }
 }
 

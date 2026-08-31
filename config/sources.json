@@ -14,6 +14,41 @@
     "enabled": true
   },
   {
+    "name": "karriere.at – Verkauf Feldbach",
+    "url": "https://www.karriere.at/jobs/verk%C3%A4ufer/feldbach",
+    "kind": "discovery",
+    "adapter": "karriere-at",
+    "enabled": true
+  },
+  {
+    "name": "karriere.at – Geringfügig Feldbach",
+    "url": "https://www.karriere.at/jobs/geringf%C3%BCgig/feldbach",
+    "kind": "discovery",
+    "adapter": "karriere-at",
+    "enabled": true
+  },
+  {
+    "name": "karriere.at – Sekretariat Feldbach",
+    "url": "https://www.karriere.at/jobs/sekretariat/feldbach",
+    "kind": "discovery",
+    "adapter": "karriere-at",
+    "enabled": true
+  },
+  {
+    "name": "karriere.at – Gastronomie Feldbach",
+    "url": "https://www.karriere.at/jobs/gastronomie/feldbach",
+    "kind": "discovery",
+    "adapter": "karriere-at",
+    "enabled": true
+  },
+  {
+    "name": "BIPA Mühldorf – Direktanzeige",
+    "url": "https://www.karriere.at/jobs/7865401",
+    "kind": "monitor",
+    "adapter": "karriere-detail",
+    "enabled": true
+  },
+  {
     "name": "MeinJob Südoststeiermark",
     "url": "https://www.meinjob-suedoststeiermark.at/firmen/gemeinde-st-stefan",
     "kind": "discovery",

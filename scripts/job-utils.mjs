@@ -4,7 +4,7 @@ export const placeTravelMinutes = {
   'st stefan im rosental': 3,
   'st. stefan im rosental': 3,
   'feldbach': 18,
-  'mühldorf bei feldbach': 23,
+  'muhldorf bei feldbach': 23,
   'mureck': 29,
   'gnas': 14,
   'bad gleichenberg': 24,
@@ -17,7 +17,6 @@ export const placeTravelMinutes = {
   'ludersdorf': 36,
   'bad radkersburg': 38,
   'loipersdorf bei furstenfeld': 39,
-  'loipersdorf bei fürstenfeld': 39,
   'hartberg': 48,
   'weiz': 43,
   'bad blumau': 55,
@@ -132,6 +131,70 @@ export function jsonLdObjects(html) {
     } catch { /* A malformed third-party block should not abort the whole source. */ }
   }
   return objects
+}
+
+export function karriereDetailState(html) {
+  const start = String(html).indexOf('"jobDetail":')
+  if (start < 0) return 'unknown'
+  const match = String(html).slice(start, start + 120000).match(/"isInactive":(true|false)/)
+  if (!match) return 'unknown'
+  return match[1] === 'true' ? 'inactive' : 'active'
+}
+
+export function extractJobSections(html) {
+  const headings = [...String(html).matchAll(/<(h[2-6]|strong)[^>]*>([\s\S]*?)<\/\1>/gi)]
+  const result = { tasks: [], requirements: [] }
+  for (let index = 0; index < headings.length; index++) {
+    const heading = normalize(headings[index][2])
+    const kind = /aufgaben|dich.*erwartet|tatigkeit|dein.*job/.test(heading)
+      ? 'tasks'
+      : /profil|mitbringen|qualifikation|anforderung|voraussetzung/.test(heading)
+        ? 'requirements'
+        : null
+    if (!kind) continue
+    const start = headings[index].index + headings[index][0].length
+    const end = headings[index + 1]?.index ?? Math.min(String(html).length, start + 6000)
+    const section = String(html).slice(start, end)
+    const list = section.match(/<ul[^>]*>([\s\S]*?)<\/ul>/i)?.[1]
+    if (!list) continue
+    const items = [...list.matchAll(/<li[^>]*>([\s\S]*?)<\/li>/gi)].map(match => plainText(match[1])).filter(Boolean)
+    result[kind].push(...items)
+  }
+  result.tasks = [...new Set(result.tasks)].slice(0, 8)
+  result.requirements = [...new Set(result.requirements)].slice(0, 8)
+  return result
+}
+
+export function enrichPortalJob(job, html, checkedAt) {
+  const postings = jsonLdObjects(html)
+  const posting = postings.find(item => normalize(item.title) === normalize(job.title)) ?? postings[0]
+  const descriptionHtml = posting?.description ?? html
+  const sections = extractJobSections(descriptionHtml)
+  const detailText = plainText(descriptionHtml)
+  const email = descriptionHtml.match(/mailto:([^"'?#\s<]+)/i)?.[1]
+  const phone = descriptionHtml.match(/tel:([^"'?\s<]+)/i)?.[1]
+  const escapedApplyUrl = String(html).match(/"applyUrl":"((?:\\.|[^"\\])*)"/)?.[1]
+  let applyUrl = job.applyUrl
+  if (escapedApplyUrl) {
+    try { applyUrl = JSON.parse(`"${escapedApplyUrl}"`) } catch { /* Keep the public detail URL if embedded state is malformed. */ }
+  }
+  const salaryValue = posting?.baseSalary?.value?.value ?? posting?.baseSalary?.value?.minValue
+  const enriched = {
+    ...job,
+    tasks: sections.tasks.length ? sections.tasks : job.tasks,
+    requirements: sections.requirements.length ? sections.requirements : job.requirements,
+    description: detailText || job.description,
+    contact: email || phone ? { email: email ? decodeURIComponent(email) : undefined, phone: phone ? decodeURIComponent(phone) : undefined } : job.contact,
+    applyUrl,
+    salary: salaryValue && !isConcrete(job.salary) ? `ab € ${Number(salaryValue).toLocaleString('de-AT')} brutto` : job.salary,
+    morningFriendly: job.morningFriendly || /vormittag|bis\s*13|05[:.]?\d{2}|06[:.]?\d{2}/i.test(detailText),
+    weekendRequired: job.weekendRequired || /samstag|sonntag|wochenend/i.test(detailText),
+    checkedAt,
+  }
+  enriched.concerns = buildConcerns(enriched)
+  enriched.fitScore = scoreJob(enriched)
+  enriched.fitReasons = buildReasons(enriched)
+  return enriched
 }
 
 function walk(value, visit) {

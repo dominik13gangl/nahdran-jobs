@@ -1,6 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { canonicalKey, dedupeJobs, jsonLdObjects, parseJobsAt, parseKarriereAt, scoreJob } from './job-utils.mjs'
+import { canonicalKey, dedupeJobs, enrichPortalJob, extractJobSections, fromJsonLd, jsonLdObjects, karriereDetailState, parseJobsAt, parseKarriereAt, scoreJob } from './job-utils.mjs'
 
 test('normalisiert geschlechtsneutrale Titel für Dubletten', () => {
   const a = { title: 'Verkäufer:in (m/w/d)', company: 'BILLA AG', location: 'Feldbach' }
@@ -36,6 +36,21 @@ test('liest JobPosting aus verschachteltem JSON-LD', () => {
   assert.equal(jsonLdObjects(html).length, 1)
 })
 
+test('verwendet bei Karriere.at den strukturierten Detailstatus statt Template-Text', () => {
+  const html = '<script>window.__data={"jobDetail":{"isInactive":false},"inactiveJobCupcake":{"text":"leider nicht mehr verfügbar"}}</script>'
+  assert.equal(karriereDetailState(html), 'active')
+  assert.equal(karriereDetailState(html.replace('"isInactive":false', '"isInactive":true')), 'inactive')
+})
+
+test('ordnet Ortsnamen mit Umlaut der regionalen Fahrzeit zu', () => {
+  const job = fromJsonLd({
+    '@type': 'JobPosting', title: 'Mitarbeiter:in Verkauf', employmentType: 'PART_TIME',
+    hiringOrganization: { name: 'BIPA' }, jobLocation: { address: { addressLocality: 'Mühldorf Bei Feldbach' } },
+  }, { name: 'Direktanzeige', url: 'https://example.test/job' }, '2026-08-31T12:00:00Z')
+  assert.equal(job.driveMinutes, 23)
+  assert.ok(job.fitScore >= 50)
+})
+
 test('liest eine karriere.at-Karte mit Gehalt und Kurzbeschreibung', () => {
   const html = `<li class="m-jobsList__item"><h2><a class="m-jobsListItem__titleLink" href="https://www.karriere.at/jobs/1">Verkäufer:in Fokus Kassa</a></h2><a class="m-jobsListItem__companyName" href="/f/billa">Billa AG</a><a class="m-jobsListItem__location" data-location="feldbach">Feldbach<span>, </span></a><span>Teilzeit ab 2.251 € monatlich</span><span class="m-jobListSummary__text">Kundenbetreuung ist Hauptaufgabe. Gastro-Erfahrung ist von Vorteil.</span></li>`
   const [job] = parseKarriereAt(html, { name: 'karriere.at', url: 'https://www.karriere.at/jobs' }, '2026-08-31T12:00:00Z')
@@ -62,4 +77,23 @@ test('vereinheitlicht Portal-Titel mit Stunden und Rechtsformen', () => {
   const a = { title: 'Verkäufer:In (m/w/d) Teilzeit (20 Std) – 8200 Gleisdorf', company: 'JYSK Österreich GmbH', location: 'Gleisdorf' }
   const b = { title: 'Verkäufer/in', company: 'JYSK Österreich', location: 'Gleisdorf' }
   assert.equal(canonicalKey(a), canonicalKey(b))
+})
+
+test('extrahiert Aufgaben und Anforderungen aus semantischen Abschnitten', () => {
+  const html = `<h4>IHRE AUFGABEN</h4><ul><li>Kundinnen beraten</li><li>Waren präsentieren</li></ul><h4>IHR PROFIL</h4><ul><li>Freude am Umgang mit Menschen</li><li>Gastro-Erfahrung von Vorteil</li></ul>`
+  assert.deepEqual(extractJobSections(html), {
+    tasks: ['Kundinnen beraten', 'Waren präsentieren'],
+    requirements: ['Freude am Umgang mit Menschen', 'Gastro-Erfahrung von Vorteil'],
+  })
+})
+
+test('reichert einen Portaltreffer mit JSON-LD-Details an', () => {
+  const base = { title: 'Verkäufer:in', company: 'JYSK', location: 'Gleisdorf', driveMinutes: 37, employmentType: ['Teilzeit'], schedule: 'Teilzeit', salary: 'im Inserat nicht konkret angegeben', morningFriendly: false, weekendRequired: false, tasks: ['Aufgaben bitte in der Originalanzeige prüfen'], requirements: ['Anforderungen bitte in der Originalanzeige prüfen'], concerns: [], fitReasons: [], sourceUrl: 'https://www.jobs.at/i/1' }
+  const description = `<strong>WAS DICH IN DEINEM NÄCHSTEN JOB ERWARTET</strong><ul><li>Kund:innen beraten</li></ul><strong>WAS DU MITBRINGEN SOLLST</strong><ul><li>Freude am Kontakt</li></ul>`
+  const html = `<script type="application/ld+json">${JSON.stringify({ '@type': 'JobPosting', title: 'Verkäufer:in', description, baseSalary: { value: { value: 2251 } } })}</script><script>window.__data={"applyUrl":"https:\\/\\/bewerbung.example\\/job-1"}</script>`
+  const result = enrichPortalJob(base, html, '2026-08-31T12:00:00Z')
+  assert.deepEqual(result.tasks, ['Kund:innen beraten'])
+  assert.deepEqual(result.requirements, ['Freude am Kontakt'])
+  assert.match(result.salary, /2\D*251/)
+  assert.equal(result.applyUrl, 'https://bewerbung.example/job-1')
 })
