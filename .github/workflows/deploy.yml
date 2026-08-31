@@ -37,6 +37,9 @@ jobs:
       - name: Tests ausführen
         run: npm test
 
+      - name: Lint ausführen
+        run: npm run lint
+
       - name: Produktionsversion bauen
         run: npm run build
 

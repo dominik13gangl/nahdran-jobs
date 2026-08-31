@@ -1,18 +1,7 @@
 import { BriefcaseBusiness, CarFront, Clock3, RotateCcw, Search, SlidersHorizontal } from 'lucide-react'
-
-export type FilterState = {
-  query: string
-  location: string
-  maxDrive: number
-  morningOnly: boolean
-  partTimeOnly: boolean
-}
+import { defaultFilters, type FilterState } from '../filter-config'
 
 type Props = { filters: FilterState; onChange: (filters: FilterState) => void; resultCount: number }
-
-export const defaultFilters: FilterState = {
-  query: '', location: '', maxDrive: 40, morningOnly: false, partTimeOnly: true,
-}
 
 export function Filters({ filters, onChange, resultCount }: Props) {
   const set = <K extends keyof FilterState>(key: K, value: FilterState[K]) => onChange({ ...filters, [key]: value })

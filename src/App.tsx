@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useState } from 'react'
 import { ArrowDownUp, Database, ShieldCheck } from 'lucide-react'
 import { Header } from './components/Header'
-import { Filters, defaultFilters, type FilterState } from './components/Filters'
+import { Filters } from './components/Filters'
 import { JobList } from './components/JobList'
 import { JobDetail } from './components/JobDetail'
+import { defaultFilters, type FilterState } from './filter-config'
 import type { Job, JobsPayload } from './types'
 
 const FAVORITES_KEY = 'nahdran-favorites-v1'
@@ -17,7 +18,8 @@ function App() {
   const [sort, setSort] = useState<'fit' | 'drive' | 'recent'>('fit')
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}jobs.json`).then(response => {
+    const freshDataUrl = `${import.meta.env.BASE_URL}jobs.json?fresh=${Date.now()}`
+    fetch(freshDataUrl, { cache: 'no-store' }).then(response => {
       if (!response.ok) throw new Error('Jobdaten konnten nicht geladen werden')
       return response.json()
     }).then((data: JobsPayload) => setPayload(data)).catch(console.error)
@@ -43,7 +45,8 @@ function App() {
   function toggleFavorite(id: string) {
     setFavorites(current => {
       const next = new Set(current)
-      next.has(id) ? next.delete(id) : next.add(id)
+      if (next.has(id)) next.delete(id)
+      else next.add(id)
       return next
     })
   }
