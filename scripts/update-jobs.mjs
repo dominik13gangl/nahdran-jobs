@@ -8,6 +8,7 @@ const checkedAt = new Date().toISOString()
 const discovered = []
 const successfulUrls = new Set()
 const pageTexts = new Map()
+const permanentlyGoneUrls = new Set()
 const errors = []
 
 for (const source of sources) {
@@ -15,6 +16,7 @@ for (const source of sources) {
     const response = await fetch(source.url, { headers: { 'user-agent': 'NahdranJobMonitor/0.1 (+private family job search)', accept: 'text/html,application/xhtml+xml' }, signal: AbortSignal.timeout(20000) })
     if (response.status === 404 || response.status === 410) {
       successfulUrls.add(source.url)
+      if (response.status === 410) permanentlyGoneUrls.add(source.url)
       continue
     }
     if (!response.ok) throw new Error(`HTTP ${response.status}`)
@@ -28,6 +30,7 @@ for (const source of sources) {
 }
 
 const retained = existing.jobs.flatMap(job => {
+  if (permanentlyGoneUrls.has(job.sourceUrl)) return []
   const sourceChecked = successfulUrls.has(job.sourceUrl)
   if (!sourceChecked) return [job]
   const pageText = pageTexts.get(job.sourceUrl) ?? ''

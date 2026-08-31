@@ -12,7 +12,7 @@ Nahdran ist ein privater, mobiloptimierter Jobfinder für familienfreundliche St
 - transparente Passungsgründe statt einer undurchsichtigen KI-Zahl
 - automatischer Import von `JobPosting`-JSON-LD aus mehreren Quellen
 - Dublettenerkennung über normalisierte Position, Firma und Ort
-- vorsichtiges Entfernen: erst nach drei erfolgreichen Prüfungen ohne Treffer
+- vorsichtiges Entfernen: HTTP 410 sofort, sonst erst nach drei erfolgreichen Prüfungen ohne Treffer
 - täglicher GitHub-Actions-Lauf um 06:15 Uhr während der österreichischen Sommerzeit bzw. 05:15 Uhr im Winter (04:15 UTC)
 - automatischer Build, Tests und Veröffentlichung über GitHub Pages
 

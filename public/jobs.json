@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T14:28:21.043Z",
+  "generatedAt": "2026-08-31T14:30:58.218Z",
   "origin": "St. Stefan im Rosental",
   "sourceCount": 10,
   "jobs": [
@@ -50,53 +50,9 @@
       "source": "Firmenwebsite",
       "sourceUrl": "https://jobs.legenstein.at/offene-stellen/reinigungskraft",
       "applyUrl": "https://jobs.legenstein.at/deine-bewerbung",
-      "checkedAt": "2026-08-31T14:28:21.043Z",
+      "checkedAt": "2026-08-31T14:30:58.218Z",
       "status": "active",
       "missingChecks": 0
-    },
-    {
-      "id": "dussmann-reinigung-mureck-14813",
-      "title": "Reinigungskraft (m/w/d)",
-      "company": "Dussmann Austria",
-      "location": "Mureck",
-      "distanceKm": 25,
-      "driveMinutes": 29,
-      "employmentType": [
-        "Geringfügig",
-        "Teilzeit"
-      ],
-      "hoursPerWeek": 5,
-      "schedule": "5 Std./Woche · genaue Lage nach Vereinbarung",
-      "morningFriendly": false,
-      "weekendRequired": false,
-      "salary": "im Inserat nicht konkret angegeben",
-      "fitScore": 84,
-      "fitReasons": [
-        "Nur 5 Wochenstunden",
-        "Teilzeit direkt in Mureck",
-        "Keine spezielle Ausbildung genannt",
-        "Gastro-Erfahrung passt zu Service- und Hygienestandards"
-      ],
-      "concerns": [
-        "Arbeitszeitlage muss direkt geklärt werden",
-        "Gehalt ist in der Quelle nicht konkret ausgewiesen"
-      ],
-      "requirements": [
-        "Gepflegtes und höfliches Auftreten",
-        "Sorgfältige Arbeitsweise",
-        "Verlässlichkeit"
-      ],
-      "tasks": [
-        "Sauberkeit und Ordnung am Standort sicherstellen",
-        "Reinigungsarbeiten nach Objektplan"
-      ],
-      "source": "XING / Arbeitgeberlink",
-      "sourceUrl": "https://www.xing.com/jobs/mureck-reinigungskraft-id-14813-155943465",
-      "applyUrl": "https://www.xing.com/jobs/mureck-reinigungskraft-id-14813-155943465",
-      "postedAt": "2026-07-01",
-      "checkedAt": "2026-08-31T14:28:21.043Z",
-      "status": "uncertain",
-      "missingChecks": 2
     },
     {
       "id": "legenstein-rezeption-bad-gleichenberg",
@@ -146,7 +102,7 @@
       "source": "Firmenwebsite",
       "sourceUrl": "https://jobs.legenstein.at/jobs/rezeptionist-in",
       "applyUrl": "https://jobs.legenstein.at/deine-bewerbung",
-      "checkedAt": "2026-08-31T14:28:21.043Z",
+      "checkedAt": "2026-08-31T14:30:58.218Z",
       "status": "active",
       "missingChecks": 0
     },
@@ -192,7 +148,7 @@
       "sourceUrl": "https://www.karriere.at/jobs/b%C3%BCroassistenz/feldbach",
       "applyUrl": "https://www.karriere.at/jobs/b%C3%BCroassistenz/feldbach",
       "postedAt": "2026-08-28",
-      "checkedAt": "2026-08-31T14:28:21.043Z",
+      "checkedAt": "2026-08-31T14:30:58.218Z",
       "status": "active",
       "missingChecks": 0
     },
@@ -237,7 +193,7 @@
       "sourceUrl": "https://www.karriere.at/jobs/b%C3%BCroassistenz/feldbach",
       "applyUrl": "https://www.karriere.at/jobs/b%C3%BCroassistenz/feldbach",
       "postedAt": "2026-08-27",
-      "checkedAt": "2026-08-31T14:28:21.043Z",
+      "checkedAt": "2026-08-31T14:30:58.218Z",
       "status": "active",
       "missingChecks": 0
     }
