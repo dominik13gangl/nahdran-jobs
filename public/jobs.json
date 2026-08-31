@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T14:30:58.218Z",
+  "generatedAt": "2026-08-31T14:37:41.068Z",
   "origin": "St. Stefan im Rosental",
   "sourceCount": 10,
   "jobs": [
@@ -50,7 +50,7 @@
       "source": "Firmenwebsite",
       "sourceUrl": "https://jobs.legenstein.at/offene-stellen/reinigungskraft",
       "applyUrl": "https://jobs.legenstein.at/deine-bewerbung",
-      "checkedAt": "2026-08-31T14:30:58.218Z",
+      "checkedAt": "2026-08-31T14:37:41.068Z",
       "status": "active",
       "missingChecks": 0
     },
@@ -102,55 +102,161 @@
       "source": "Firmenwebsite",
       "sourceUrl": "https://jobs.legenstein.at/jobs/rezeptionist-in",
       "applyUrl": "https://jobs.legenstein.at/deine-bewerbung",
-      "checkedAt": "2026-08-31T14:30:58.218Z",
+      "checkedAt": "2026-08-31T14:37:41.068Z",
       "status": "active",
       "missingChecks": 0
     },
     {
-      "id": "billa-kassa-feldbach",
-      "title": "Verkäufer:in Fokus Kassa",
-      "company": "BILLA AG",
+      "title": "Verkäufer:in Fokus Obst, Gemüse",
+      "company": "Billa AG",
       "location": "Feldbach",
       "distanceKm": 14,
       "driveMinutes": 18,
       "employmentType": [
         "Teilzeit"
       ],
-      "schedule": "Teilzeit · Dienstplan laut Filiale",
+      "schedule": "Teilzeit · genaue Zeiten laut Inserat",
       "morningFriendly": false,
-      "weekendRequired": true,
-      "salary": "ab € 2.251 brutto (Vollzeitbasis)",
-      "salaryMonthlyFullTime": 2251,
-      "fitScore": 69,
+      "weekendRequired": false,
+      "salary": "ab 2.251 € monatlich",
+      "description": "Kundenbetreuung, Warenpräsentation und Kassieren sind Hauptaufgaben. Berufserfahrung im Lebensmitteleinzelhandel ist von Vorteil. Langfristige Tätigkeit mit Mitarbeiter:innen-Rabatten. Mehr anzeigen Merken",
       "fitReasons": [
-        "Kurze Fahrt nach Feldbach",
-        "Gastro-Erfahrung wird als Vorteil genannt",
-        "Teilzeit ist ausgeschrieben",
-        "Kundenkontakt entspricht bisheriger Praxis"
+        "Kurze Fahrt von ungefähr 18 Minuten",
+        "Teilzeit ist ausgeschrieben"
       ],
       "concerns": [
-        "Vormittagsmodell ist nicht zugesagt",
-        "Samstagsdienste sind im Handel wahrscheinlich und zu klären"
+        "Vormittagszeiten müssen direkt abgeklärt werden"
       ],
       "requirements": [
-        "Freude am Umgang mit Menschen",
-        "Genauigkeit an der Kassa",
-        "Erste Erfahrung in Handel oder Gastronomie von Vorteil",
-        "Deutschkenntnisse"
+        "Berufserfahrung im Lebensmitteleinzelhandel ist von Vorteil."
       ],
       "tasks": [
-        "Kassieren",
-        "Kundenbetreuung",
-        "Warenpräsentation",
-        "Unterstützung im Markt"
+        "Kundenbetreuung, Warenpräsentation und Kassieren sind Hauptaufgaben.",
+        "Langfristige Tätigkeit mit Mitarbeiter:innen-Rabatten.",
+        "Mehr anzeigen Merken"
       ],
-      "source": "karriere.at",
-      "sourceUrl": "https://www.karriere.at/jobs/b%C3%BCroassistenz/feldbach",
-      "applyUrl": "https://www.karriere.at/jobs/b%C3%BCroassistenz/feldbach",
-      "postedAt": "2026-08-28",
-      "checkedAt": "2026-08-31T14:30:58.218Z",
+      "source": "karriere.at – Teilzeit Feldbach",
+      "sourceUrl": "https://www.karriere.at/jobs/7824218",
+      "applyUrl": "https://www.karriere.at/jobs/7824218",
+      "checkedAt": "2026-08-31T14:37:41.068Z",
       "status": "active",
-      "missingChecks": 0
+      "fitScore": 70,
+      "id": "bb96777691663b"
+    },
+    {
+      "title": "Verkäufer:in Feinkost",
+      "company": "Billa AG",
+      "location": "Feldbach",
+      "distanceKm": 14,
+      "driveMinutes": 18,
+      "employmentType": [
+        "Teilzeit"
+      ],
+      "schedule": "Teilzeit · genaue Zeiten laut Inserat",
+      "morningFriendly": false,
+      "weekendRequired": false,
+      "salary": "ab 2.251 € monatlich",
+      "description": "Kundenbetreuung im Lebensmitteleinzelhandel mit Schwerpunkt Feinkost, Fleisch und Backshop. Warenbestellung und Preisauszeichnung. Erste Berufserfahrung im Lebensmitteleinzelhandel von Vorteil. Langfristige Tätigkeit mit Mitarbeiter:innen-Rabatten. Mehr anzeigen Merken",
+      "fitReasons": [
+        "Kurze Fahrt von ungefähr 18 Minuten",
+        "Teilzeit ist ausgeschrieben"
+      ],
+      "concerns": [
+        "Vormittagszeiten müssen direkt abgeklärt werden"
+      ],
+      "requirements": [
+        "Erste Berufserfahrung im Lebensmitteleinzelhandel von Vorteil."
+      ],
+      "tasks": [
+        "Kundenbetreuung im Lebensmitteleinzelhandel mit Schwerpunkt Feinkost, Fleisch und Backshop.",
+        "Warenbestellung und Preisauszeichnung.",
+        "Langfristige Tätigkeit mit Mitarbeiter:innen-Rabatten."
+      ],
+      "source": "karriere.at – Teilzeit Feldbach",
+      "sourceUrl": "https://www.karriere.at/jobs/7852013",
+      "applyUrl": "https://www.karriere.at/jobs/7852013",
+      "checkedAt": "2026-08-31T14:37:41.068Z",
+      "status": "active",
+      "fitScore": 70,
+      "id": "fee75a8caca60e"
+    },
+    {
+      "title": "Verkäufer:in",
+      "company": "Billa AG",
+      "location": "Bad Gleichenberg",
+      "distanceKm": 18,
+      "driveMinutes": 24,
+      "employmentType": [
+        "Teilzeit"
+      ],
+      "schedule": "Teilzeit · genaue Zeiten laut Inserat",
+      "morningFriendly": false,
+      "weekendRequired": false,
+      "salary": "ab 2.251 € monatlich",
+      "description": "Kundenbetreuung, Warenpräsentation und Kassieren. Erste Berufserfahrung im Lebensmitteleinzelhandel oder Gastronomie von Vorteil. Langfristige Tätigkeit mit Mitarbeiter:innen-Rabatten. Mehr anzeigen Merken",
+      "fitReasons": [
+        "Kurze Fahrt von ungefähr 24 Minuten",
+        "Teilzeit ist ausgeschrieben"
+      ],
+      "concerns": [
+        "Vormittagszeiten müssen direkt abgeklärt werden"
+      ],
+      "requirements": [
+        "Erste Berufserfahrung im Lebensmitteleinzelhandel oder Gastronomie von Vorteil."
+      ],
+      "tasks": [
+        "Kundenbetreuung, Warenpräsentation und Kassieren.",
+        "Langfristige Tätigkeit mit Mitarbeiter:innen-Rabatten.",
+        "Mehr anzeigen Merken"
+      ],
+      "source": "karriere.at – Teilzeit Feldbach",
+      "sourceUrl": "https://www.karriere.at/jobs/7850579",
+      "applyUrl": "https://www.karriere.at/jobs/7850579",
+      "checkedAt": "2026-08-31T14:37:41.068Z",
+      "status": "active",
+      "fitScore": 70,
+      "id": "a502ceb758b80b"
+    },
+    {
+      "id": "billa-kassa-feldbach",
+      "title": "Verkäufer:in Fokus Kassa",
+      "company": "Billa AG",
+      "location": "Feldbach",
+      "distanceKm": 14,
+      "driveMinutes": 18,
+      "employmentType": [
+        "Teilzeit"
+      ],
+      "schedule": "Teilzeit · genaue Zeiten laut Inserat",
+      "morningFriendly": false,
+      "weekendRequired": false,
+      "salary": "ab 2.251 € monatlich",
+      "salaryMonthlyFullTime": 2251,
+      "fitScore": 70,
+      "fitReasons": [
+        "Kurze Fahrt von ungefähr 18 Minuten",
+        "Teilzeit ist ausgeschrieben",
+        "Die bisherige Gastro-Erfahrung ist gut übertragbar"
+      ],
+      "concerns": [
+        "Vormittagszeiten müssen direkt abgeklärt werden"
+      ],
+      "requirements": [
+        "Erste Berufserfahrung im Lebensmitteleinzelhandel oder Gastronomie von Vorteil."
+      ],
+      "tasks": [
+        "Kundenbetreuung, Warenpräsentation und Kassentätigkeiten.",
+        "Langfristige Tätigkeit mit Mitarbeiter:innen-Rabatten.",
+        "Mehr anzeigen Merken"
+      ],
+      "source": "karriere.at – Teilzeit Feldbach",
+      "sourceUrl": "https://www.karriere.at/jobs/7842191",
+      "applyUrl": "https://www.karriere.at/jobs/7842191",
+      "postedAt": "2026-08-28",
+      "checkedAt": "2026-08-31T14:37:41.068Z",
+      "status": "active",
+      "missingChecks": 0,
+      "description": "Kundenbetreuung, Warenpräsentation und Kassentätigkeiten. Erste Berufserfahrung im Lebensmitteleinzelhandel oder Gastronomie von Vorteil. Langfristige Tätigkeit mit Mitarbeiter:innen-Rabatten. Mehr anzeigen Merken"
     },
     {
       "id": "bipa-verkauf-muehldorf",
@@ -193,9 +299,114 @@
       "sourceUrl": "https://www.karriere.at/jobs/b%C3%BCroassistenz/feldbach",
       "applyUrl": "https://www.karriere.at/jobs/b%C3%BCroassistenz/feldbach",
       "postedAt": "2026-08-27",
-      "checkedAt": "2026-08-31T14:30:58.218Z",
+      "checkedAt": "2026-08-31T14:37:41.068Z",
+      "status": "uncertain",
+      "missingChecks": 1
+    },
+    {
+      "title": "Verkäufer:In (m/w/d) Teilzeit (20 Std) – 8200 Gleisdorf",
+      "company": "JYSK Österreich",
+      "location": "Gleisdorf",
+      "distanceKm": 28,
+      "driveMinutes": 37,
+      "employmentType": [
+        "Teilzeit"
+      ],
+      "hoursPerWeek": 20,
+      "schedule": "Teilzeit · bis 20 Std./Woche",
+      "morningFriendly": false,
+      "weekendRequired": false,
+      "salary": "ab 2.251€ pro Monat",
+      "description": "Verkäufer:In (m/w/d) Teilzeit (20 Std) – 8200 Gleisdorf",
+      "fitReasons": [
+        "Teilzeit ist ausgeschrieben"
+      ],
+      "concerns": [
+        "Vormittagszeiten müssen direkt abgeklärt werden"
+      ],
+      "requirements": [
+        "Anforderungen bitte in der Originalanzeige prüfen"
+      ],
+      "tasks": [
+        "Aufgaben bitte in der Originalanzeige prüfen"
+      ],
+      "source": "jobs.at – Teilzeit Feldbach",
+      "sourceUrl": "https://www.jobs.at/i/7791173",
+      "applyUrl": "https://www.jobs.at/i/7791173",
+      "checkedAt": "2026-08-31T14:37:41.068Z",
       "status": "active",
-      "missingChecks": 0
+      "fitScore": 64,
+      "id": "d3c5ba4ad70189"
+    },
+    {
+      "title": "Verkäufer:in",
+      "company": "Billa AG",
+      "location": "Loipersdorf bei Fürstenfeld",
+      "distanceKm": 29,
+      "driveMinutes": 39,
+      "employmentType": [
+        "Teilzeit",
+        "Vollzeit"
+      ],
+      "schedule": "Teilzeit · Vollzeit · genaue Zeiten laut Inserat",
+      "morningFriendly": false,
+      "weekendRequired": false,
+      "salary": "ab 2.251 € monatlich",
+      "description": "Verkäufer:in",
+      "fitReasons": [
+        "Teilzeit ist ausgeschrieben"
+      ],
+      "concerns": [
+        "Vormittagszeiten müssen direkt abgeklärt werden"
+      ],
+      "requirements": [
+        "Anforderungen bitte in der Originalanzeige prüfen"
+      ],
+      "tasks": [
+        "Aufgaben bitte in der Originalanzeige prüfen"
+      ],
+      "source": "karriere.at – Teilzeit Feldbach",
+      "sourceUrl": "https://www.karriere.at/jobs/7857662",
+      "applyUrl": "https://www.karriere.at/jobs/7857662",
+      "checkedAt": "2026-08-31T14:37:41.068Z",
+      "status": "active",
+      "fitScore": 64,
+      "id": "e88f0d027d595d"
+    },
+    {
+      "title": "Verkäufer:in Feinkost",
+      "company": "Billa AG",
+      "location": "Sinabelkirchen",
+      "distanceKm": 26,
+      "driveMinutes": 34,
+      "employmentType": [
+        "Teilzeit",
+        "Vollzeit"
+      ],
+      "schedule": "Teilzeit · Vollzeit · genaue Zeiten laut Inserat",
+      "morningFriendly": false,
+      "weekendRequired": false,
+      "salary": "ab 2.251 € monatlich",
+      "description": "Verkäufer:in Feinkost",
+      "fitReasons": [
+        "Teilzeit ist ausgeschrieben"
+      ],
+      "concerns": [
+        "Vormittagszeiten müssen direkt abgeklärt werden"
+      ],
+      "requirements": [
+        "Anforderungen bitte in der Originalanzeige prüfen"
+      ],
+      "tasks": [
+        "Aufgaben bitte in der Originalanzeige prüfen"
+      ],
+      "source": "karriere.at – Teilzeit Feldbach",
+      "sourceUrl": "https://www.karriere.at/jobs/7859467",
+      "applyUrl": "https://www.karriere.at/jobs/7859467",
+      "checkedAt": "2026-08-31T14:37:41.068Z",
+      "status": "active",
+      "fitScore": 64,
+      "id": "d61ad548016d6b"
     }
   ]
 }

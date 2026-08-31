@@ -18,7 +18,7 @@ export function JobList({ jobs, selectedId, favorites, onSelect, onFavorite }: P
       {jobs.map(job => (
         <article key={job.id} role="listitem" className={`job-row ${selectedId === job.id ? 'selected' : ''}`} onClick={() => onSelect(job)}>
           <button className={`favorite ${favorites.has(job.id) ? 'active' : ''}`} onClick={event => { event.stopPropagation(); onFavorite(job.id) }} aria-label={favorites.has(job.id) ? 'Aus Favoriten entfernen' : 'Zu Favoriten hinzufügen'}><Heart size={19} fill={favorites.has(job.id) ? 'currentColor' : 'none'} /></button>
-          <div className="job-main"><h3>{job.title}</h3><p>{job.company}</p></div>
+          <div className="job-main"><h3>{job.title}</h3><p>{job.company}</p>{job.status === 'uncertain' && <small className="source-warning">Quelle wird erneut geprüft</small>}</div>
           <div className="job-meta"><MapPin size={16} /><span>{job.location}<small>{job.driveMinutes} Min Fahrt</small></span></div>
           <div className="job-schedule"><Clock3 size={16} /><span>{job.schedule}<small>{job.hoursPerWeek ? `${job.hoursPerWeek} Std./Woche` : job.employmentType.join(' · ')}</small></span></div>
           <div className="job-salary">{job.salary}</div>

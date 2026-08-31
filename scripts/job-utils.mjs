@@ -12,10 +12,31 @@ export const placeTravelMinutes = {
   'sankt peter am ottersbach': 17,
   'fehring': 29,
   'leibnitz': 38,
+  'gleisdorf': 37,
+  'sinabelkirchen': 34,
+  'ludersdorf': 36,
+  'bad radkersburg': 38,
+  'loipersdorf bei furstenfeld': 39,
+  'loipersdorf bei fürstenfeld': 39,
+  'hartberg': 48,
+  'weiz': 43,
+  'bad blumau': 55,
 }
 
 export function plainText(value = '') {
-  return String(value).replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim()
+  return decodeEntities(String(value).replace(/<[^>]+>/g, ' ')).replace(/\s+/g, ' ').trim()
+}
+
+function decodeEntities(value) {
+  return value
+    .replace(/&nbsp;|&#160;/gi, ' ')
+    .replace(/&amp;/gi, '&')
+    .replace(/&quot;/gi, '"')
+    .replace(/&apos;|&#39;/gi, "'")
+    .replace(/&lt;/gi, '<')
+    .replace(/&gt;/gi, '>')
+    .replace(/&#x([0-9a-f]+);/gi, (_, hex) => String.fromCodePoint(Number.parseInt(hex, 16)))
+    .replace(/&#(\d+);/g, (_, decimal) => String.fromCodePoint(Number(decimal)))
 }
 
 export function normalize(value = '') {
@@ -23,8 +44,20 @@ export function normalize(value = '') {
 }
 
 export function canonicalKey(job) {
-  const title = normalize(job.title).replace(/\b(mitarbeiter|mitarbeiterin|mitarbeiterinnen)\b/g, '').trim()
-  return [title, normalize(job.company), normalize(job.location)].join('|')
+  const location = normalize(job.location)
+  const title = normalize(job.title)
+    .replace(/\b(mitarbeiter|mitarbeiterin|mitarbeiterinnen|in|innen|teilzeit|vollzeit|geringfugig|all genders|alle geschlechter)\b/g, ' ')
+    .replace(/\b\d+(?: \d+)? (?:std|stunden|wochenstunden|h)\b/g, ' ')
+    .replace(/\b\d{4}\b/g, ' ')
+    .replace(new RegExp(`\\b${escapeRegex(location)}\\b`, 'g'), ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+  const company = normalize(job.company).replace(/\b(gmbh|ag|kg|mbh|gesellschaft m b h)\b/g, ' ').replace(/\s+/g, ' ').trim()
+  return [title, company, location].join('|')
+}
+
+function escapeRegex(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 }
 
 export function stableId(job) {
@@ -36,13 +69,36 @@ export function dedupeJobs(jobs) {
   for (const job of jobs) {
     const key = canonicalKey(job)
     const current = chosen.get(key)
-    if (!current || completeness(job) > completeness(current)) chosen.set(key, { ...current, ...job, id: current?.id ?? job.id ?? stableId(job) })
+    if (!current) {
+      chosen.set(key, { ...job, id: job.id ?? stableId(job) })
+      continue
+    }
+    const preferred = completeness(job) >= completeness(current) ? job : current
+    const fallback = preferred === job ? current : job
+    const merged = { ...fallback, ...preferred, id: current.id ?? job.id ?? stableId(job) }
+    if (isDetailUrl(job.sourceUrl) && !isDetailUrl(current.sourceUrl)) {
+      merged.sourceUrl = job.sourceUrl
+      merged.applyUrl = job.applyUrl
+      merged.source = job.source
+    }
+    if (isConcrete(job.salary) && !isConcrete(current.salary)) merged.salary = job.salary
+    merged.checkedAt = job.checkedAt ?? current.checkedAt
+    merged.status = job.status ?? current.status
+    chosen.set(key, merged)
   }
   return [...chosen.values()]
 }
 
 function completeness(job) {
-  return ['salary', 'schedule', 'requirements', 'tasks', 'contact', 'expiresAt'].reduce((sum, field) => sum + (job[field] && (!Array.isArray(job[field]) || job[field].length) ? 1 : 0), 0)
+  return ['schedule', 'requirements', 'tasks', 'contact', 'expiresAt'].reduce((sum, field) => sum + (job[field] && (!Array.isArray(job[field]) || job[field].length) ? 1 : 0), isConcrete(job.salary) ? 1 : 0)
+}
+
+function isConcrete(value) {
+  return Boolean(value && !String(value).startsWith('im Inserat'))
+}
+
+function isDetailUrl(value = '') {
+  return /karriere\.at\/jobs\/\d+|jobs\.at\/i\/\d+|legenstein\.at\/(?:jobs|offene-stellen)\//.test(value)
 }
 
 export function scoreJob(job) {
@@ -106,6 +162,87 @@ export function fromJsonLd(raw, source, checkedAt) {
   job.fitReasons = buildReasons(job)
   job.id = stableId(job)
   return job
+}
+
+export function parseKarriereAt(html, source, checkedAt) {
+  const cards = [...html.matchAll(/<li class="m-jobsList__item">([\s\S]*?)<\/li>/g)].map(match => match[1])
+  return cards.map(card => {
+    const titleMatch = card.match(/m-jobsListItem__titleLink[^>]+href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/)
+    const company = captureText(card, /m-jobsListItem__companyName[^>]*>([\s\S]*?)<\/a>/)
+    const location = captureText(card, /m-jobsListItem__location[^>]*>([\s\S]*?)<span/)
+    if (!titleMatch || !company || !location) return null
+    const description = captureText(card, /m-jobListSummary__text[^>]*>([\s\S]*?)<\/span>/)
+    return fromPortalCard({
+      title: plainText(titleMatch[2]), company, location, url: titleMatch[1], description,
+      cardText: plainText(card),
+    }, source, checkedAt)
+  }).filter(Boolean)
+}
+
+export function parseJobsAt(html, source, checkedAt) {
+  const starts = [...html.matchAll(/<li\s+data-job="[^"]+"/g)].map(match => match.index)
+  return starts.map((start, index) => html.slice(start, starts[index + 1] ?? html.length)).map(card => {
+    const titleMatch = card.match(/<h2[^>]+data-job-title[\s\S]*?<a[^>]+href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/)
+    const company = captureText(card, /<(?:a|span)[^>]*data-job-company[^>]*>([\s\S]*?)<\/(?:a|span)>/)
+    const location = captureText(card, /data-job-location[\s\S]*?<a[^>]*>([\s\S]*?)<\/a>/)
+    const pills = [...card.matchAll(/<span class="j-c-pill-text">([\s\S]*?)<\/span>/g)].map(match => plainText(match[1]))
+    if (!titleMatch || !company || !location || !/^https:\/\/www\.jobs\.at\/i\/\d+/.test(titleMatch[1])) return null
+    return fromPortalCard({
+      title: plainText(titleMatch[2]), company, location, url: titleMatch[1], description: '',
+      cardText: plainText(`${titleMatch[2]} ${pills.join(' ')}`),
+    }, source, checkedAt)
+  }).filter(Boolean)
+}
+
+function captureText(html, pattern) {
+  return plainText(html.match(pattern)?.[1] ?? '')
+}
+
+function fromPortalCard(raw, source, checkedAt) {
+  const cardText = raw.cardText
+  const employmentType = []
+  if (/geringfügig|minijob/i.test(raw.title) || (/geringfügig/i.test(cardText) && !/teilzeit\s*\/\s*geringfügig/i.test(cardText))) employmentType.push('Geringfügig')
+  if (/teilzeit/i.test(cardText)) employmentType.push('Teilzeit')
+  if (/vollzeit/i.test(cardText)) employmentType.push('Vollzeit')
+  if (!employmentType.length) employmentType.push('Vollzeit')
+  const hours = raw.title.match(/(\d{1,2})(?:\s*[-–]\s*(\d{1,2}))?\s*(?:Std\.?|Stunden|Wochenstunden)/i)
+  const hoursPerWeek = hours ? Number(hours[2] ?? hours[1]) : undefined
+  const salaryMatch = cardText.match(/(?:ab\s+)?[€]?\s*[\d.]+(?:,\d+)?\s*€?\s*(?:brutto\s*)?(?:pro\s+(?:Monat|Stunde|Jahr)|monatlich|jährlich)/i)
+  const salary = salaryMatch ? salaryMatch[0].replace(/^\s+|\s+$/g, '') : 'im Inserat nicht konkret angegeben'
+  const driveMinutes = placeTravelMinutes[normalize(raw.location)] ?? 45
+  const description = raw.description || raw.title
+  const morningFriendly = /vormittag|bis\s*13|05[:.]?\d{2}|06[:.]?\d{2}/i.test(`${raw.title} ${description}`)
+  const weekendRequired = /samstag|sonntag|wochenend/i.test(`${raw.title} ${description}`)
+  const requirements = sentences(raw.description).filter(sentence => /erforderlich|voraus|kenntnis|erfahrung|ausbildung|abschluss|von vorteil/i.test(sentence))
+  const tasks = sentences(raw.description).filter(sentence => !requirements.includes(sentence)).slice(0, 3)
+  const job = {
+    title: raw.title, company: raw.company, location: raw.location,
+    distanceKm: Math.round(driveMinutes * .75), driveMinutes,
+    employmentType: [...new Set(employmentType)], hoursPerWeek,
+    schedule: hoursPerWeek ? `${employmentType.join(' · ')} · bis ${hoursPerWeek} Std./Woche` : `${employmentType.join(' · ')} · genaue Zeiten laut Inserat`,
+    morningFriendly, weekendRequired, salary, description,
+    fitReasons: [], concerns: buildConcerns({ morningFriendly, weekendRequired, salary }),
+    requirements: requirements.length ? requirements : ['Anforderungen bitte in der Originalanzeige prüfen'],
+    tasks: tasks.length ? tasks : ['Aufgaben bitte in der Originalanzeige prüfen'],
+    source: source.name, sourceUrl: new URL(raw.url, source.url).href, applyUrl: new URL(raw.url, source.url).href,
+    checkedAt, status: 'active',
+  }
+  job.fitScore = scoreJob(job)
+  job.fitReasons = buildReasons(job)
+  job.id = stableId(job)
+  return job
+}
+
+function sentences(value) {
+  return plainText(value).split(/(?<=[.!?])\s+/).map(sentence => sentence.trim()).filter(sentence => sentence.length > 12)
+}
+
+function buildConcerns({ morningFriendly, weekendRequired, salary }) {
+  const concerns = []
+  if (!morningFriendly) concerns.push('Vormittagszeiten müssen direkt abgeklärt werden')
+  if (weekendRequired) concerns.push('Das Inserat nennt Wochenend- oder Samstagsarbeit')
+  if (salary.startsWith('im Inserat')) concerns.push('Gehalt ist in der Übersicht nicht konkret ausgewiesen')
+  return concerns
 }
 
 function buildReasons(job) {

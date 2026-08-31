@@ -3,12 +3,14 @@
     "name": "karriere.at – Büro Feldbach",
     "url": "https://www.karriere.at/jobs/b%C3%BCroassistenz/feldbach",
     "kind": "discovery",
+    "adapter": "karriere-at",
     "enabled": true
   },
   {
     "name": "karriere.at – Teilzeit Feldbach",
     "url": "https://www.karriere.at/jobs/teilzeit/feldbach",
     "kind": "discovery",
+    "adapter": "karriere-at",
     "enabled": true
   },
   {
@@ -21,12 +23,14 @@
     "name": "jobs.at – Teilzeit Feldbach",
     "url": "https://www.jobs.at/j/teilzeit/feldbach",
     "kind": "discovery",
+    "adapter": "jobs-at",
     "enabled": true
   },
   {
     "name": "jobs.at – Region Feldbach",
     "url": "https://www.jobs.at/j/-/feldbach",
     "kind": "discovery",
+    "adapter": "jobs-at",
     "enabled": true
   },
   {

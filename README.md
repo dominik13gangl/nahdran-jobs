@@ -10,7 +10,7 @@ Nahdran ist ein privater, mobiloptimierter Jobfinder für familienfreundliche St
 - Favoriten, die lokal im Browser gespeichert bleiben
 - Detailansicht mit Aufgaben, Anforderungen, Kontakt, Quelle und offenen Fragen
 - transparente Passungsgründe statt einer undurchsichtigen KI-Zahl
-- automatischer Import von `JobPosting`-JSON-LD aus mehreren Quellen
+- automatischer Import von `JobPosting`-JSON-LD sowie eigenen HTML-Adaptern für `karriere.at` und `jobs.at`
 - Dublettenerkennung über normalisierte Position, Firma und Ort
 - vorsichtiges Entfernen: HTTP 410 sofort, sonst erst nach drei erfolgreichen Prüfungen ohne Treffer
 - täglicher GitHub-Actions-Lauf um 06:15 Uhr während der österreichischen Sommerzeit bzw. 05:15 Uhr im Winter (04:15 UTC)
@@ -42,7 +42,7 @@ npm run jobs:update
 
 1. Quellen stehen in [`config/sources.json`](config/sources.json).
 2. [`scripts/update-jobs.mjs`](scripts/update-jobs.mjs) ruft nur öffentliche Stellen-Seiten ab.
-3. Strukturierte `JobPosting`-Daten werden vereinheitlicht, bewertet und dedupliziert.
+3. Strukturierte `JobPosting`-Daten und die serverseitigen Portal-Jobkarten werden vereinheitlicht, bewertet und dedupliziert.
 4. Bei nicht erreichbaren Quellen bleiben bestehende Daten unverändert.
 5. Das Ergebnis wird als [`public/jobs.json`](public/jobs.json) gespeichert.
 6. GitHub Pages veröffentlicht den statischen Build ohne persönliche Daten oder Serverkonto.
@@ -62,7 +62,7 @@ Die Zahl ist eine Orientierung. Unklare Arbeitszeiten oder Anforderungen werden 
 
 ## Neue Quelle ergänzen
 
-Eine öffentliche Such- oder Firmenseite in `config/sources.json` ergänzen. Seiten mit Schema.org-`JobPosting` funktionieren automatisch. Für Seiten ohne strukturierte Daten ist ein eigener Adapter in `scripts/update-jobs.mjs` nötig. Zugangsbeschränkungen, Captchas und Nutzungsbedingungen werden nicht umgangen.
+Eine öffentliche Such- oder Firmenseite in `config/sources.json` ergänzen. Seiten mit Schema.org-`JobPosting` funktionieren automatisch; `karriere.at` und `jobs.at` besitzen eigene, getestete Adapter. Für weitere Seiten ohne strukturierte Daten ist ein eigener Adapter nötig. Zugangsbeschränkungen, Captchas und Nutzungsbedingungen werden nicht umgangen.
 
 ## Veröffentlichung
 

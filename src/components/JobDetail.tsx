@@ -21,7 +21,7 @@ export function JobDetail({ job, isFavorite, onFavorite, onClose }: Props) {
       <section><h3>Aufgaben</h3><ul>{job.tasks.map(task => <li key={task}>{task}</li>)}</ul></section>
       <section><h3>Anforderungen</h3><ul>{job.requirements.map(requirement => <li key={requirement}>{requirement}</li>)}</ul></section>
       {job.contact && <section><h3>Kontakt</h3><div className="contact-list">{job.contact.name && <span>{job.contact.name}</span>}{job.contact.phone && <a href={`tel:${job.contact.phone}`}><Phone />{job.contact.phone}</a>}{job.contact.email && <a href={`mailto:${job.contact.email}`}><Mail />{job.contact.email}</a>}</div></section>}
-      <section className="source-note"><span>Quelle: <a href={job.sourceUrl} target="_blank" rel="noreferrer">{job.source} <ExternalLink /></a></span><small>Geprüft: {new Intl.DateTimeFormat('de-AT', { dateStyle: 'medium' }).format(new Date(job.checkedAt))}</small></section>
+      <section className="source-note"><span>Quelle: <a href={job.sourceUrl} target="_blank" rel="noreferrer">{job.source} <ExternalLink /></a>{job.status === 'uncertain' && <em>Quelle aktuell nicht bestätigt – erneute Prüfung läuft</em>}</span><small>Geprüft: {new Intl.DateTimeFormat('de-AT', { dateStyle: 'medium' }).format(new Date(job.checkedAt))}</small></section>
       <div className="detail-actions"><button className={`secondary-button ${isFavorite ? 'active' : ''}`} onClick={onFavorite}><Heart fill={isFavorite ? 'currentColor' : 'none'} />{isFavorite ? 'Gemerkt' : 'Merken'}</button><a className="primary-button" href={job.applyUrl} target="_blank" rel="noreferrer">Zur Bewerbung <ExternalLink /></a></div>
     </aside>
   )
