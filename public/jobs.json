@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T09:52:01.010Z",
+  "generatedAt": "2026-10-04T10:34:53.100Z",
   "origin": "St. Stefan im Rosental",
   "sourceCount": 25,
   "sourceProviderCount": 8,
@@ -16,9 +16,9 @@
   ],
   "stats": {
     "raw": 198,
-    "unique": 153,
+    "unique": 152,
     "recommended": 8,
-    "review": 125,
+    "review": 122,
     "excluded": 53,
     "successfulSearches": 25,
     "totalSearches": 26,
@@ -32,8 +32,8 @@
       "provider": "karriere.at",
       "kind": "discovery",
       "status": "ok",
-      "found": 11,
-      "checkedAt": "2026-10-03T09:52:01.010Z"
+      "found": 10,
+      "checkedAt": "2026-10-04T10:34:53.100Z"
     },
     {
       "id": "karriere-parttime-feldbach",
@@ -42,7 +42,7 @@
       "kind": "discovery",
       "status": "ok",
       "found": 9,
-      "checkedAt": "2026-10-03T09:52:01.010Z"
+      "checkedAt": "2026-10-04T10:34:53.100Z"
     },
     {
       "id": "karriere-sales-feldbach",
@@ -50,8 +50,8 @@
       "provider": "karriere.at",
       "kind": "discovery",
       "status": "ok",
-      "found": 9,
-      "checkedAt": "2026-10-03T09:52:01.010Z"
+      "found": 10,
+      "checkedAt": "2026-10-04T10:34:53.100Z"
     },
     {
       "id": "karriere-marginal-feldbach",
@@ -60,7 +60,7 @@
       "kind": "discovery",
       "status": "ok",
       "found": 0,
-      "checkedAt": "2026-10-03T09:52:01.010Z"
+      "checkedAt": "2026-10-04T10:34:53.100Z"
     },
     {
       "id": "karriere-secretary-feldbach",
@@ -68,8 +68,8 @@
       "provider": "karriere.at",
       "kind": "discovery",
       "status": "ok",
-      "found": 11,
-      "checkedAt": "2026-10-03T09:52:01.010Z"
+      "found": 10,
+      "checkedAt": "2026-10-04T10:34:53.100Z"
     },
     {
       "id": "karriere-hospitality-feldbach",
@@ -77,8 +77,8 @@
       "provider": "karriere.at",
       "kind": "discovery",
       "status": "ok",
-      "found": 12,
-      "checkedAt": "2026-10-03T09:52:01.010Z"
+      "found": 13,
+      "checkedAt": "2026-10-04T10:34:53.100Z"
     },
     {
       "id": "karriere-bipa-muehldorf",
@@ -87,7 +87,7 @@
       "kind": "monitor",
       "status": "ok",
       "found": 0,
-      "checkedAt": "2026-10-03T09:52:01.010Z"
+      "checkedAt": "2026-10-04T10:34:53.100Z"
     },
     {
       "id": "willhaben-parttime-region",
@@ -96,7 +96,7 @@
       "kind": "discovery",
       "status": "ok",
       "found": 2,
-      "checkedAt": "2026-10-03T09:52:01.010Z"
+      "checkedAt": "2026-10-04T10:34:53.100Z"
     },
     {
       "id": "willhaben-hospitality-region",
@@ -105,7 +105,7 @@
       "kind": "discovery",
       "status": "ok",
       "found": 8,
-      "checkedAt": "2026-10-03T09:52:01.010Z"
+      "checkedAt": "2026-10-04T10:34:53.100Z"
     },
     {
       "id": "willhaben-region-1",
@@ -114,7 +114,7 @@
       "kind": "discovery",
       "status": "ok",
       "found": 30,
-      "checkedAt": "2026-10-03T09:52:01.010Z"
+      "checkedAt": "2026-10-04T10:34:53.100Z"
     },
     {
       "id": "willhaben-region-2",
@@ -123,7 +123,7 @@
       "kind": "discovery",
       "status": "ok",
       "found": 30,
-      "checkedAt": "2026-10-03T09:52:01.010Z"
+      "checkedAt": "2026-10-04T10:34:53.100Z"
     },
     {
       "id": "willhaben-region-3",
@@ -132,7 +132,7 @@
       "kind": "discovery",
       "status": "ok",
       "found": 30,
-      "checkedAt": "2026-10-03T09:52:01.010Z"
+      "checkedAt": "2026-10-04T10:34:53.100Z"
     },
     {
       "id": "willhaben-region-4",
@@ -141,7 +141,7 @@
       "kind": "discovery",
       "status": "ok",
       "found": 24,
-      "checkedAt": "2026-10-03T09:52:01.010Z"
+      "checkedAt": "2026-10-04T10:34:53.100Z"
     },
     {
       "id": "meinjob-regional-feed",
@@ -150,7 +150,7 @@
       "kind": "discovery",
       "status": "failed",
       "found": 0,
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "note": "MeinJob Feed HTTP 403"
     },
     {
@@ -160,7 +160,7 @@
       "kind": "discovery",
       "status": "ok",
       "found": 0,
-      "checkedAt": "2026-10-03T09:52:01.010Z"
+      "checkedAt": "2026-10-04T10:34:53.100Z"
     },
     {
       "id": "steirerjobs-parttime-region-2",
@@ -169,7 +169,7 @@
       "kind": "discovery",
       "status": "ok",
       "found": 0,
-      "checkedAt": "2026-10-03T09:52:01.010Z"
+      "checkedAt": "2026-10-04T10:34:53.100Z"
     },
     {
       "id": "steirerjobs-office-region-1",
@@ -178,7 +178,7 @@
       "kind": "discovery",
       "status": "ok",
       "found": 0,
-      "checkedAt": "2026-10-03T09:52:01.010Z"
+      "checkedAt": "2026-10-04T10:34:53.100Z"
     },
     {
       "id": "steirerjobs-office-region-2",
@@ -187,7 +187,7 @@
       "kind": "discovery",
       "status": "ok",
       "found": 0,
-      "checkedAt": "2026-10-03T09:52:01.010Z"
+      "checkedAt": "2026-10-04T10:34:53.100Z"
     },
     {
       "id": "go-gnas-jobs",
@@ -196,7 +196,7 @@
       "kind": "discovery",
       "status": "ok",
       "found": 17,
-      "checkedAt": "2026-10-03T09:52:01.010Z"
+      "checkedAt": "2026-10-04T10:34:53.100Z"
     },
     {
       "id": "jobs-at-parttime-feldbach",
@@ -205,7 +205,7 @@
       "kind": "discovery",
       "status": "ok",
       "found": 4,
-      "checkedAt": "2026-10-03T09:52:01.010Z"
+      "checkedAt": "2026-10-04T10:34:53.100Z"
     },
     {
       "id": "jobs-at-region-feldbach",
@@ -214,7 +214,7 @@
       "kind": "discovery",
       "status": "ok",
       "found": 1,
-      "checkedAt": "2026-10-03T09:52:01.010Z"
+      "checkedAt": "2026-10-04T10:34:53.100Z"
     },
     {
       "id": "municipality-st-stefan",
@@ -223,7 +223,7 @@
       "kind": "monitor",
       "status": "ok",
       "found": 0,
-      "checkedAt": "2026-10-03T09:52:01.010Z"
+      "checkedAt": "2026-10-04T10:34:53.100Z"
     },
     {
       "id": "legenstein-overview",
@@ -232,7 +232,7 @@
       "kind": "discovery",
       "status": "ok",
       "found": 0,
-      "checkedAt": "2026-10-03T09:52:01.010Z"
+      "checkedAt": "2026-10-04T10:34:53.100Z"
     },
     {
       "id": "legenstein-housekeeping",
@@ -241,7 +241,7 @@
       "kind": "monitor",
       "status": "ok",
       "found": 0,
-      "checkedAt": "2026-10-03T09:52:01.010Z"
+      "checkedAt": "2026-10-04T10:34:53.100Z"
     },
     {
       "id": "legenstein-reception",
@@ -250,7 +250,7 @@
       "kind": "monitor",
       "status": "ok",
       "found": 0,
-      "checkedAt": "2026-10-03T09:52:01.010Z"
+      "checkedAt": "2026-10-04T10:34:53.100Z"
     },
     {
       "id": "xing-dussmann-mureck",
@@ -259,7 +259,7 @@
       "kind": "monitor",
       "status": "ok",
       "found": 0,
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "note": "HTTP 410"
     }
   ],
@@ -305,7 +305,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=3",
       "sourceJobId": "13270556",
       "postedAt": "2026-09-29",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 96,
       "matchTier": "top",
@@ -366,13 +366,13 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=2",
       "sourceJobId": "13257452",
       "postedAt": "2026-09-30",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 77,
       "matchTier": "top",
       "id": "d801fa1c4c7182",
       "missingChecks": 0,
-      "expiresAt": "2026-12-03",
+      "expiresAt": "2026-12-04",
       "sourceId": "willhaben-region-2"
     },
     {
@@ -418,13 +418,13 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=2",
       "sourceJobId": "13226880",
       "postedAt": "2026-10-01",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 72,
       "matchTier": "top",
       "id": "2aa4be241318c9",
       "missingChecks": 0,
-      "expiresAt": "2026-12-03",
+      "expiresAt": "2026-12-04",
       "sourceId": "willhaben-region-2"
     },
     {
@@ -470,13 +470,13 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=2",
       "sourceJobId": "13178231",
       "postedAt": "2026-09-29",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 72,
       "matchTier": "review",
       "id": "d19c58157cbd05",
       "missingChecks": 0,
-      "expiresAt": "2026-12-03",
+      "expiresAt": "2026-12-04",
       "sourceId": "willhaben-region-2"
     },
     {
@@ -529,13 +529,13 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark",
       "sourceJobId": "13264255",
       "postedAt": "2026-10-02",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 72,
       "matchTier": "review",
       "id": "969e1343b29e51",
       "sourceId": "willhaben-region-1",
-      "expiresAt": "2026-12-03",
+      "expiresAt": "2026-12-04",
       "missingChecks": 0
     },
     {
@@ -573,7 +573,7 @@
       "provider": "willhaben.at",
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=3",
       "postedAt": "2026-09-29",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 72,
       "matchTier": "top",
@@ -581,7 +581,7 @@
       "sourceId": "willhaben-region-3",
       "missingChecks": 0,
       "sourceJobId": "13267964",
-      "expiresAt": "2026-12-03"
+      "expiresAt": "2026-12-04"
     },
     {
       "title": "Verkäufer:in Feinkost",
@@ -631,7 +631,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=4",
       "sourceJobId": "13268034",
       "postedAt": "2026-09-15",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 72,
       "matchTier": "top",
@@ -682,13 +682,13 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=3",
       "sourceJobId": "13270626",
       "postedAt": "2026-09-29",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 72,
       "matchTier": "top",
       "id": "1839abdab1ecf9",
       "sourceId": "willhaben-region-3",
-      "expiresAt": "2026-12-03",
+      "expiresAt": "2026-12-04",
       "missingChecks": 0
     },
     {
@@ -739,7 +739,7 @@
       "provider": "karriere.at",
       "discoveryUrl": "https://www.karriere.at/jobs/gastronomie/feldbach",
       "postedAt": "2026-10-02T07:44:54+02:00",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 72,
       "matchTier": "top",
@@ -792,7 +792,7 @@
       "provider": "karriere.at",
       "discoveryUrl": "https://www.karriere.at/jobs/teilzeit/feldbach",
       "postedAt": "2026-10-02T07:44:54+02:00",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 72,
       "matchTier": "review",
@@ -843,7 +843,7 @@
       "source": "karriere.at – Gastronomie Feldbach",
       "sourceUrl": "https://www.karriere.at/jobs/7831901",
       "applyUrl": "https://rewe-group.jobs/de/jobs/application/02100-624-1-5-8261-T?referer=karriere.at",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 66,
       "id": "d61ad548016d6b",
@@ -902,7 +902,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=2",
       "sourceJobId": "13271143",
       "postedAt": "2026-09-30",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 66,
       "matchTier": "top",
@@ -960,7 +960,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark",
       "sourceJobId": "13274681",
       "postedAt": "2026-10-01",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 66,
       "matchTier": "review",
@@ -1015,13 +1015,13 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark",
       "sourceJobId": "13274664",
       "postedAt": "2026-10-01",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 66,
       "matchTier": "review",
       "id": "c4b3bc02c96795",
       "sourceId": "willhaben-region-1",
-      "expiresAt": "2026-12-03",
+      "expiresAt": "2026-12-04",
       "missingChecks": 0
     },
     {
@@ -1071,7 +1071,7 @@
       "source": "Firmenwebsite",
       "sourceUrl": "https://jobs.legenstein.at/offene-stellen/reinigungskraft",
       "applyUrl": "https://jobs.legenstein.at/deine-bewerbung",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "missingChecks": 0,
       "provider": "Vulkanlandhotel Legenstein",
@@ -1114,13 +1114,13 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=3",
       "sourceJobId": "13202553",
       "postedAt": "2026-09-28",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 64,
       "matchTier": "review",
       "id": "c3a53f5a897c52",
       "missingChecks": 0,
-      "expiresAt": "2026-12-03",
+      "expiresAt": "2026-12-04",
       "sourceId": "willhaben-region-3"
     },
     {
@@ -1158,13 +1158,13 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=3",
       "sourceJobId": "13268058",
       "postedAt": "2026-09-29",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 64,
       "matchTier": "review",
       "id": "dacedb23a3dd53",
       "sourceId": "willhaben-region-3",
-      "expiresAt": "2026-12-03",
+      "expiresAt": "2026-12-04",
       "missingChecks": 0
     },
     {
@@ -1202,13 +1202,13 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=3",
       "sourceJobId": "13268055",
       "postedAt": "2026-09-29",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 64,
       "matchTier": "review",
       "id": "abf7287a830c43",
       "sourceId": "willhaben-region-3",
-      "expiresAt": "2026-12-03",
+      "expiresAt": "2026-12-04",
       "missingChecks": 0
     },
     {
@@ -1248,7 +1248,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=4",
       "sourceJobId": "13270305",
       "postedAt": "2026-09-21",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 64,
       "matchTier": "review",
@@ -1293,13 +1293,13 @@
       "applyUrl": "https://www.jobs.at/i/7893454",
       "provider": "jobs.at",
       "discoveryUrl": "https://www.jobs.at/j/-/feldbach",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "uncertain",
       "fitScore": 64,
       "matchTier": "review",
       "id": "96bec76b23d9ae",
       "sourceId": "jobs-at-region-feldbach",
-      "missingChecks": 1
+      "missingChecks": 2
     },
     {
       "title": "Coach:in in der beruflichen Rehabilitation im Leistungsangebot CAMINO",
@@ -1349,13 +1349,14 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark",
       "sourceJobId": "13275042",
       "postedAt": "2026-10-02",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 64,
       "matchTier": "review",
       "id": "200d37f239ae6f",
       "sourceId": "willhaben-region-1",
-      "expiresAt": "2026-12-03"
+      "expiresAt": "2026-12-04",
+      "missingChecks": 0
     },
     {
       "title": "klinische/n und Gesundheitspsychologen/in",
@@ -1393,13 +1394,13 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=4",
       "sourceJobId": "13126387",
       "postedAt": "2026-09-09",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 62,
       "matchTier": "review",
       "id": "5cabf14a51867c",
       "missingChecks": 0,
-      "expiresAt": "2026-12-03",
+      "expiresAt": "2026-12-04",
       "sourceId": "willhaben-region-4"
     },
     {
@@ -1498,7 +1499,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=3",
       "sourceJobId": "13253194",
       "postedAt": "2026-09-28",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 58,
       "matchTier": "review",
@@ -1544,7 +1545,7 @@
       "provider": "GO GNAS",
       "discoveryUrl": "https://www.gnas.gv.at/sites/freie-arbeitsstellen",
       "sourceJobId": "4-monteurin-hkls-projekt",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "description": "4 Monteur/in HKLS Projekt Roth Handel-&Bauhandwerkservice GmbH E-Mail: C.Kumpitsch@roth-diehandwerksmeister.at Montage und Installationen von gebäudetechnischen Anlagen (Heizung, Klima, Lüftung, Sanitär) bei Projekten im gewerblichen Bereich (Hotelerie, Büro- und Geschäftsgebäude, hochwertige Wohnbauten, öffentliche Einrichtungen) • Termingerechte Materialanforderung und Vorbereitung des Materials • Offene Kommunikation und enge Zusammenarbeit im Team (Montage, Projektleitung,...)",
       "contact": {
@@ -1589,7 +1590,7 @@
       "provider": "GO GNAS",
       "discoveryUrl": "https://www.gnas.gv.at/sites/freie-arbeitsstellen",
       "sourceJobId": "2-obermonteurin-hklsprojekt",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "description": "2 Obermonteur/in HKLS/Projekt Roth Handel-&Bauhandwerkservice GmbH E-Mail: C.Kumpitsch@roth-diehandwerksmeister.at Montage und Installationen von gebäudetechnischen Anlagen (Heizung, Klima, Lüftung, Sanitär) bei Projekten im gewerblichen Bereich (Hotelerie, Büro- und Geschäftsgebäude, hochwertige Wohnbauten, öffentliche Einrichtungen) • Eigenverantwortliche Abwicklung von Baustellen in Zusammenarbeit mit der Projektleitung • Führen von Montagepersonal • Baustellenkoordination und -dokumentation • Termingerechte Materialanforderung",
       "contact": {
@@ -1634,7 +1635,7 @@
       "provider": "GO GNAS",
       "discoveryUrl": "https://www.gnas.gv.at/sites/freie-arbeitsstellen",
       "sourceJobId": "1-verkaufsberaterin-aussendienst-mwd-fenstertuerentoresonnenschutz",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "description": "1 Verkaufsberater/in Außendienst (m/w/d) -Fenster/Türen/Tore/Sonnenschutz Pock GmbH. Burgfried 145 8342 Gnas Mobil: 06642519042 Web: www.pockdach.at Ihre Aufgaben: Bedarfsermittlung und individuelle Beratung zu Fenster-, Türen-, Tor- und Sonnenschutzlösungen, Erstellung von Angeboten in Zusammenarbeit mit dem Innendienst, Präsentation unserer Produkte beim Kunden vor Ort, Arbeiten mit Stammkunden und Finden von Neukunden, Montageeinteilung und Abrechnung; Ihr Profil: idealerweise kaufmännische oder technische Ausbildung (Tischlerlehre von Vorteil), technisches Verständnis für Fenster-, Tür- und Sonnenschutzsysteme, kommunikative, überzeugende und lösungsorientierte Persönlichkeit, selbstständige, strukturierte und ergebnisorientierte Arbeitsweise, Führerschein Klasse B; Wir bieten: eine verantwortungsvolle Dauerposition und die Sicherheit eines etablierten, erfolgreichen Unternehmens, eigenen Firmenwagen, Laptop und Handy, flexible Arbeitszeiten & eigenständige Tourenplanung, ein motiviertes, wertschätzendes Team und langfristige Perspektiven, Teilnahme an Schulungen und Firmenveranstaltungen Bezahlung: 2807,00 brutto",
       "contact": {
@@ -1679,7 +1680,7 @@
       "provider": "GO GNAS",
       "discoveryUrl": "https://www.gnas.gv.at/sites/freie-arbeitsstellen",
       "sourceJobId": "reinigungskraft",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "description": "Reinigungskraft Firma: Gnesaha Pflege GmbH 8342 Gnas 114 Ansprechperson: Mag. Kampus Ivanka Tel.: 03151 / 20 186 14 i.kampus@gnesaha.at",
       "contact": {
@@ -1744,7 +1745,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=3",
       "sourceJobId": "13264970",
       "postedAt": "2026-09-28",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 53,
       "matchTier": "review",
@@ -1808,7 +1809,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=3",
       "sourceJobId": "13264972",
       "postedAt": "2026-09-28",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 53,
       "matchTier": "review",
@@ -1853,7 +1854,7 @@
       "provider": "GO GNAS",
       "discoveryUrl": "https://www.gnas.gv.at/sites/freie-arbeitsstellen",
       "sourceJobId": "1-instandhalterin-gesucht",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "description": "1 Instandhalter/in gesucht Gesellmann Mischfuttererzeugung GmbH Kohlberg 63 8342 Gnas Tel.: 031512221 E-Mail: a.gsellmann@gsellmann.com laufende Instandhaltung der Maschinen für die Futtermittelherstellung, Tausch diverser Ersatzteile, Lagerhaltung und Mitwirkung bei der Bestellung von Ersatzteilen; Anforderungen: technisches Grundverständnis, Bereitschaft für flexible Tätigkeiten in einem Mischfutterwerk, Selbstständigkeit und Eigeninitiative, zuverlässiges, genaues und verantwortungsbewusstes Arbeiten; Wir bieten: langfristige Anstellung in einem zukunftsicheren Unternehmen, kollegiales Umfeld, Arbeiten hauptsächlich im 2er Team, Arbeitskleidung sowie Werkzeug werden selbstverständlich zur Verfügung gestellt, Arbeitszeit von Montag bis Freitag Bezahlung: 2.800 ,- € brutto auf Basis 40 Stunden Woche",
       "contact": {
@@ -1865,55 +1866,6 @@
       "id": "e94b3e84108a21",
       "missingChecks": 0,
       "sourceId": "go-gnas-jobs"
-    },
-    {
-      "title": "Zeitungszusteller/in",
-      "company": "zustellpartner.at | Medienbote HZ GmbH",
-      "location": "Oberdorf am Hochegg / Dörfla / Kirchbach",
-      "distanceKm": 8,
-      "driveMinutes": 11,
-      "distanceEstimated": true,
-      "employmentType": [
-        "Unbekannt"
-      ],
-      "schedule": "Unbekannt · genaue Zeiten laut Inserat",
-      "morningFriendly": false,
-      "weekendRequired": false,
-      "salary": "im Inserat nicht konkret angegeben",
-      "description": "Zeitungszusteller/in zustellpartner.at | Medienbote HZ GmbH Kirchbach, Dörfla, Oberdorf am Hochegg Erfüllen Sie sich Ihre Träume! Werden Sie Zeitungszusteller:in! Das zahlt sich aus. Werden Sie Zeitungszusteller:in in: Kirchbach, Dörfla, Oberdorf * Tätigkeit in den frühen Morgenstunden (Zustellende 6:00 Uhr) * in Ihrer Wohnumgebung * eigenes Fahrzeug erforderlich (PKW, Moped, Fahrrad) Jetzt unverbindlich anfragen: Ich habe Interesse >>",
-      "fitReasons": [
-        "Kurze Fahrt von ungefähr 11 Minuten"
-      ],
-      "concerns": [
-        "Vormittagszeiten müssen direkt abgeklärt werden",
-        "Gehalt ist in der Übersicht nicht konkret ausgewiesen",
-        "Die Fahrzeit ist aus dem genannten Ort nur näherungsweise geschätzt",
-        "Beschäftigungsausmaß ist in der Übersicht nicht eindeutig angegeben"
-      ],
-      "requirements": [
-        "Anforderungen bitte in der Originalanzeige prüfen"
-      ],
-      "tasks": [
-        "Mitarbeiter:in ab sofort"
-      ],
-      "source": "willhaben – Südoststeiermark Seite 3",
-      "sourceUrl": "https://www.willhaben.at/jobs/job/zeitungszusteller-in/13250639",
-      "applyUrl": "https://www.willhaben.at/jobs/job/zeitungszusteller-in/13250639",
-      "provider": "willhaben.at",
-      "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=3",
-      "sourceJobId": "13250639",
-      "postedAt": "2026-09-28",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
-      "status": "uncertain",
-      "fitScore": 49,
-      "matchTier": "review",
-      "id": "546b6230532d20",
-      "contact": {
-        "email": "anfrage@zustellpartner.at"
-      },
-      "missingChecks": 1,
-      "expiresAt": "2026-10-02",
-      "sourceId": "willhaben-region-3"
     },
     {
       "title": "Zeitungszusteller/in",
@@ -1952,7 +1904,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=4",
       "sourceJobId": "13259452",
       "postedAt": "2026-09-21",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 49,
       "matchTier": "review",
@@ -2001,7 +1953,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=4",
       "sourceJobId": "13259451",
       "postedAt": "2026-09-21",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 49,
       "matchTier": "review",
@@ -2046,7 +1998,7 @@
       "provider": "GO GNAS",
       "discoveryUrl": "https://www.gnas.gv.at/sites/freie-arbeitsstellen",
       "sourceJobId": "1-dachdeckerspengler",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "description": "1 Dachdecker/Spengler Pock GmbH Burgfried 145, 8342 Gnas Mobil: 06642519042 E-Mail: v.pock@pockdach.at Aufgabengebiet: allgemeine Spengler- und Dachdeckerarbeiten, Flachdach und Steildach, Neubau und Sanierungsarbeiten; Dein Profil: abgeschlossene Lehre als Spengler oder Dachdecker, einschlägige mehrjährige Berufserfahrung, Führerschein B, du arbeitest zuverlässig und gerne in einem 2er bis 3er Team; Wir bieten: arbeiten in einem tollen Team, Arbeitskleidung und sonstige Benefits (z.B: Prämien), Mindestlohn lt. KV - Überzahlung abhängig von Qualifikation und Berufserfahrung, kollegialer Führungsstil, ausgezeichnetes Betriebsklima, keine auswärtigen Baustellen, geregelte Arbeitszeiten und abwechslungsreiche Tätigkeiten",
       "contact": {
@@ -2092,7 +2044,7 @@
       "provider": "GO GNAS",
       "discoveryUrl": "https://www.gnas.gv.at/sites/freie-arbeitsstellen",
       "sourceJobId": "1-kfz-techniker",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "description": "1 KFZ-Techniker Autohaus W. & H. Trummer GmbH & CO KG Gnas 120, 8342 Gnas Tel.: 06645741267 E-Mail: office@autohaus-trummer.at Wir suchen zum sofortigen Eintritt einen KFZ-Techniker mit abgeschlossener Ausbildung für unseren Betrieb in Gnas.",
       "contact": {
@@ -2138,7 +2090,7 @@
       "provider": "GO GNAS",
       "discoveryUrl": "https://www.gnas.gv.at/sites/freie-arbeitsstellen",
       "sourceJobId": "1-maurer-hochbauer",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "description": "1 Maurer - Hochbauer Pock GmbH. Burgfried 145, 8342 Gnas Mobil: 06642519042 E-Mail: v.pock@pockdach.at Web: www.pockdach.at Allgemeine Maurerarbeiten, Baupläne lesen und umsetzen, Neubau, Errichtung von Bauwerken und Bauwerksteilen, Sanierungs und Umbauarbeiten; Dein Profil: abgeschlossene Lehre und mehrjährige Berufserfahrung erwünscht, Eigenverantwortung und strukturierte Arbeitsweise, Bezahlung nach KV, Überzahlung je nach Qualifikation und Praxis möglich, keine auswärtigen Baustellen, geregelte Arbeitszeiten, abwechlungsreiche Tätigkeiten",
       "contact": {
@@ -2184,7 +2136,7 @@
       "provider": "GO GNAS",
       "discoveryUrl": "https://www.gnas.gv.at/sites/freie-arbeitsstellen",
       "sourceJobId": "1-pflegefachassistentinnen",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "description": "1 Pflege(fach)assistent:innen Österreichisches Rotes Kreuz Mobil: 0676875440031 E-Mail: Roswitha.schiefer@st.roteskreuz.at",
       "contact": {
@@ -2231,7 +2183,7 @@
       "provider": "GO GNAS",
       "discoveryUrl": "https://www.gnas.gv.at/sites/freie-arbeitsstellen",
       "sourceJobId": "1-steinmetzfacharbeiterin",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "description": "1 Steinmetzfacharbeiter/in Naturstein Trummer GmbH Burgfried 205 8342 Gnas Tel.: 0315151980 E-Mail: manuela.hoefler@naturstein-trummer.at Web: www.naturstein-trummer.at 1 Steinmetzfacharbeiter/in für Montageleistungen im Grabmalbereich und/oder Baubereich Küchenmontagen Ihr Profil: handwerkliches Geschick, Motivation, Belastbarkeit und Genauigkeit, Teamfähigkeit, Führerschein B,C; Was Sie erwartet: Montagen aller Art (Küchenplatten, Bodenverlegung, Gräber etc.), Aufnahme in unser familiär geführtes Team, intensive Einschulung in den Arbeitsbereich Bezahlung: Bezahlung laut Kollektiv - Überzahlung je nach Qualifikation möglich",
       "contact": {
@@ -2277,7 +2229,7 @@
       "provider": "GO GNAS",
       "discoveryUrl": "https://www.gnas.gv.at/sites/freie-arbeitsstellen",
       "sourceJobId": "1-zimmerer-holzbau",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "description": "1 Zimmerer-Holzbau Pock GmbH Burgfried 145, 8342 Gnas Mobil: 06642519042 E-Mail: v.pock@pockdach.at Aufgabengebiet: allgemeine Arbeiten mit Holz, Dachstühle, Carports, Fassaden, Zäune; Dein Profil: Du arbeitest zuverlässig und gerne in einem 2er bis 3er Team., Wir bieten: arbeiten in einem tollen Team, Arbeitskleidung und sonstige Benefits, Mindeststundenlohn laut KV, Überzahlung abhängig von Ihrer Qualifikation und Berufserfahrung, kollegialer Führungsstil und ein ausgezeichnetes Betriebsklima, keine auswärtigen Baustellen, geregelte Arbeitszeiten, abwechslungsreiche Tätigkeiten",
       "contact": {
@@ -2323,7 +2275,7 @@
       "provider": "GO GNAS",
       "discoveryUrl": "https://www.gnas.gv.at/sites/freie-arbeitsstellen",
       "sourceJobId": "heimhilfe",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "description": "Heimhilfe Firma: Gnesaha Pflege GmbH 8342 Gnas 114 Ansprechperson: Mag. Kampus Ivanka Tel.: 03151 / 20 186 14 i.kampus@gnesaha.at",
       "contact": {
@@ -2369,7 +2321,7 @@
       "provider": "GO GNAS",
       "discoveryUrl": "https://www.gnas.gv.at/sites/freie-arbeitsstellen",
       "sourceJobId": "diplomierte-gesundheits-und-krankenpflegerin",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "description": "Diplomierte Gesundheits-und KrankenpflegerIn Firma: Gnesaha Pflege GmbH 8342 Gnas 114 Ansprechperson: Mag. Kampus Ivanka Tel.: 03151 / 20 186 14 i.kampus@gnesaha.at",
       "contact": {
@@ -2430,7 +2382,7 @@
       "source": "Firmenwebsite",
       "sourceUrl": "https://jobs.legenstein.at/jobs/rezeptionist-in",
       "applyUrl": "https://jobs.legenstein.at/deine-bewerbung",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "missingChecks": 0,
       "provider": "Vulkanlandhotel Legenstein",
@@ -2482,13 +2434,13 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=2",
       "sourceJobId": "13257140",
       "postedAt": "2026-09-30",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 48,
       "matchTier": "review",
       "id": "360098834778c1",
       "missingChecks": 0,
-      "expiresAt": "2026-12-03",
+      "expiresAt": "2026-12-04",
       "sourceId": "willhaben-region-2"
     },
     {
@@ -2527,13 +2479,13 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=4",
       "sourceJobId": "13266408",
       "postedAt": "2026-09-24",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 48,
       "matchTier": "review",
       "id": "d57ad89438cd0a",
       "sourceId": "willhaben-region-4",
-      "expiresAt": "2026-12-03",
+      "expiresAt": "2026-12-04",
       "missingChecks": 0
     },
     {
@@ -2577,7 +2529,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark",
       "sourceJobId": "13269332",
       "postedAt": "2026-10-02",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 48,
       "matchTier": "review",
@@ -2587,7 +2539,7 @@
         "name": "FEMALE Clara Gögele",
         "email": "bewerbung@vogl-auto.at"
       },
-      "expiresAt": "2026-12-03",
+      "expiresAt": "2026-12-04",
       "missingChecks": 0
     },
     {
@@ -2634,13 +2586,13 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark",
       "sourceJobId": "13269057",
       "postedAt": "2026-10-01",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 48,
       "matchTier": "review",
       "id": "116dae15f5c009",
       "sourceId": "willhaben-region-1",
-      "expiresAt": "2026-12-03",
+      "expiresAt": "2026-12-04",
       "missingChecks": 0
     },
     {
@@ -2687,7 +2639,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=3",
       "sourceJobId": "13222029",
       "postedAt": "2026-09-22",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 46,
       "matchTier": "review",
@@ -2922,7 +2874,7 @@
       "provider": "GO GNAS",
       "discoveryUrl": "https://www.gnas.gv.at/sites/freie-arbeitsstellen",
       "sourceJobId": "1-lagermitarbeiterin",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "description": "1 Lagermitarbeiter:in Du bist ein Organisationstalent, hast Freude am Kontakt mit Kund:innen und sorgst gerne für reibungslose Abläufe im Lager? Dann bist du bei uns im Lagerhaus genau richtig! Deine Aufgaben: • Warenausgabe an Kunden • Be- und Entladen von LKWs • Wareneingangskontrolle, -kommissionierung und -übernahme • Lagerbewirtschaftung Das bringst du mit: • Deutsch in Wort und Schrift • Staplerschein mit Berufserfahrung von Vorteil • Führerschein B • Kundenorientierte, eigenständige und genaue Arbeitsweise • Freundlicher Umgang mit Kunden • Kenntnisse Agrarbereich von Vorteil Bewirb dich jetzt und erlebe, was #DeineKraft bewirkt: Agrarunion Südost eGen Lagerhaus & Co KG Lugitschstraße 1, 8330 Feldbach zH Frau Franziska Janitsch personal@agrarunion.rlh.at , +43 3152/5330-112",
       "contact": {
@@ -2972,7 +2924,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=2",
       "sourceJobId": "13263541",
       "postedAt": "2026-09-30",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 44,
       "matchTier": "review",
@@ -3021,7 +2973,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=2",
       "sourceJobId": "13263540",
       "postedAt": "2026-09-30",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 44,
       "matchTier": "review",
@@ -3070,7 +3022,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=2",
       "sourceJobId": "13263537",
       "postedAt": "2026-09-30",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 44,
       "matchTier": "review",
@@ -3184,7 +3136,7 @@
       "provider": "karriere.at",
       "discoveryUrl": "https://www.karriere.at/jobs/sekretariat/feldbach",
       "postedAt": "2026-10-01T12:33:25+02:00",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 42,
       "matchTier": "review",
@@ -3371,7 +3323,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=3",
       "sourceJobId": "13272992",
       "postedAt": "2026-09-28",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 38,
       "matchTier": "review",
@@ -3901,7 +3853,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark",
       "sourceJobId": "13265129",
       "postedAt": "2026-09-07",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 34,
       "matchTier": "review",
@@ -3939,19 +3891,19 @@
       "tasks": [
         "Mitarbeiter:in ab sofort"
       ],
-      "source": "willhaben – Südoststeiermark Seite 1",
+      "source": "willhaben – Südoststeiermark Seite 2",
       "sourceUrl": "https://www.willhaben.at/jobs/job/sozialpaedagogische-fachkraft-fuer-die-wohngemeinschaft-fehring-/13196374",
       "applyUrl": "https://www.willhaben.at/jobs/job/sozialpaedagogische-fachkraft-fuer-die-wohngemeinschaft-fehring-/13196374",
       "provider": "willhaben.at",
-      "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark",
+      "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=2",
       "sourceJobId": "13196374",
       "postedAt": "2026-04-23T09:02:32.490",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 34,
       "matchTier": "review",
       "id": "2e5a2131045521",
-      "sourceId": "willhaben-region-1",
+      "sourceId": "willhaben-region-2",
       "missingChecks": 0
     },
     {
@@ -3989,7 +3941,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=2",
       "sourceJobId": "13273859",
       "postedAt": "2026-09-30T10:37:03.536",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 34,
       "matchTier": "review",
@@ -4031,7 +3983,7 @@
       "applyUrl": "https://www.karriere.at/jobs/7885264",
       "provider": "karriere.at",
       "discoveryUrl": "https://www.karriere.at/jobs/gastronomie/feldbach",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 34,
       "matchTier": "review",
@@ -4077,7 +4029,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark",
       "sourceJobId": "13264031",
       "postedAt": "2026-09-03T12:00:30.404",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 34,
       "matchTier": "review",
@@ -4118,7 +4070,7 @@
       "provider": "GO GNAS",
       "discoveryUrl": "https://www.gnas.gv.at/sites/freie-arbeitsstellen",
       "sourceJobId": "4-monteurin-elektro",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "description": "4 Monteur:in Elektro Roth Handel-&Bauhandwerkservice GmbH Gnas 135 8342 Gnas Mobil: 06646270136 E-Mail: C.Kumpitsch@roth-diehandwerksmeister.at Wir suchen 4 Monteure für den Elektrobereich.",
       "contact": {
@@ -4180,13 +4132,13 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=3",
       "sourceJobId": "13102070",
       "postedAt": "2026-09-28",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 32,
       "matchTier": "review",
       "id": "6ac809c70dc919",
       "missingChecks": 0,
-      "expiresAt": "2026-12-03",
+      "expiresAt": "2026-12-04",
       "sourceId": "willhaben-region-3"
     },
     {
@@ -4268,54 +4220,12 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark",
       "sourceJobId": "13156338",
       "postedAt": "2026-02-04T10:31:07.861",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 31,
       "matchTier": "review",
       "id": "054369b57fa228",
       "missingChecks": 0,
-      "sourceId": "willhaben-region-1"
-    },
-    {
-      "title": "Montagetischler (m/w/d).",
-      "company": "Synergie Personal Austria GmbH",
-      "location": "Jagerberg",
-      "distanceKm": 11,
-      "driveMinutes": 14,
-      "distanceEstimated": false,
-      "employmentType": [
-        "Vollzeit"
-      ],
-      "schedule": "Vollzeit · genaue Zeiten laut Inserat",
-      "morningFriendly": false,
-      "weekendRequired": false,
-      "salary": "ab € 2 922,5 brutto/Monat",
-      "description": "Mitarbeiter:in ab sofort",
-      "fitReasons": [
-        "Kurze Fahrt von ungefähr 14 Minuten"
-      ],
-      "concerns": [
-        "Vormittagszeiten müssen direkt abgeklärt werden"
-      ],
-      "requirements": [
-        "Anforderungen bitte in der Originalanzeige prüfen"
-      ],
-      "tasks": [
-        "Mitarbeiter:in ab sofort"
-      ],
-      "source": "willhaben – Südoststeiermark Seite 1",
-      "sourceUrl": "https://www.willhaben.at/jobs/job/montagetischler-m-w-d/13268405",
-      "applyUrl": "https://www.willhaben.at/jobs/job/montagetischler-m-w-d/13268405",
-      "provider": "willhaben.at",
-      "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark",
-      "sourceJobId": "13268405",
-      "postedAt": "2026-09-16T08:46:19.194",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
-      "status": "uncertain",
-      "fitScore": 31,
-      "matchTier": "review",
-      "id": "a133f0815306b0",
-      "missingChecks": 2,
       "sourceId": "willhaben-region-1"
     },
     {
@@ -4352,7 +4262,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=2",
       "sourceJobId": "13158631",
       "postedAt": "2026-02-11T08:41:56.750",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 31,
       "matchTier": "review",
@@ -4394,7 +4304,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=3",
       "sourceJobId": "13153788",
       "postedAt": "2026-01-27T15:34:29.389",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 31,
       "matchTier": "review",
@@ -4436,7 +4346,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=3",
       "sourceJobId": "13265489",
       "postedAt": "2026-09-08T06:45:37.997",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 31,
       "matchTier": "review",
@@ -4478,7 +4388,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=3",
       "sourceJobId": "13265487",
       "postedAt": "2026-09-08T06:44:18.645",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 31,
       "matchTier": "review",
@@ -4520,7 +4430,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=4",
       "sourceJobId": "13265063",
       "postedAt": "2026-09-07T12:05:39.362",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 31,
       "matchTier": "review",
@@ -4613,7 +4523,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=4",
       "sourceJobId": "13268531",
       "postedAt": "2026-09-16T10:38:01.380",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 31,
       "matchTier": "review",
@@ -4655,7 +4565,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=3",
       "sourceJobId": "13272815",
       "postedAt": "2026-09-28T10:31:50.633",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 31,
       "matchTier": "review",
@@ -4697,7 +4607,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=3",
       "sourceJobId": "13272805",
       "postedAt": "2026-09-28T10:25:43.212",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 31,
       "matchTier": "review",
@@ -4739,12 +4649,13 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=2",
       "sourceJobId": "13270941",
       "postedAt": "2026-09-23T08:17:04.372",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 31,
       "matchTier": "review",
       "id": "d2fd2db350fb46",
-      "sourceId": "willhaben-region-2"
+      "sourceId": "willhaben-region-2",
+      "missingChecks": 0
     },
     {
       "title": "Maschinenführer*in Zweischicht (m/w/d)",
@@ -4781,7 +4692,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=3",
       "sourceJobId": "13225317",
       "postedAt": "2026-06-15T11:20:52.433",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 29,
       "matchTier": "review",
@@ -4824,7 +4735,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=2",
       "sourceJobId": "13244916",
       "postedAt": "2026-07-22T15:53:25.252",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 29,
       "matchTier": "review",
@@ -4867,7 +4778,7 @@
       "provider": "GO GNAS",
       "discoveryUrl": "https://www.gnas.gv.at/sites/freie-arbeitsstellen",
       "sourceJobId": "hilfsarbeiter-oder-ferialpraktikant-gesucht",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "description": "Hilfsarbeiter oder Ferialpraktikant gesucht! Vollzeit (Mehr-/ Überstunden möglich) Dauer: 2 Monate Beginn: Sofort Anforderungen: technisches Verständnis bzw. Interesse, Freude mit Holz zu arbeiten, Ausdauer Aufgaben: Stammholz schneiden und spalten, Scheitholz auf Paletten schlichten,… Wir sind regionaler Brennholz- & Räucherspäneproduzent Kontakt: Christian Bichler, Burgfried 200, 8342 Gnas, +43 650 32 04 625",
       "contact": {
@@ -4911,7 +4822,7 @@
       "applyUrl": "https://www.jobs.at/i/7898157",
       "provider": "jobs.at",
       "discoveryUrl": "https://www.jobs.at/j/teilzeit/feldbach",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 28,
       "matchTier": "review",
@@ -5084,7 +4995,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark",
       "sourceJobId": "13123263",
       "postedAt": "2025-10-14T15:15:18.521",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 28,
       "matchTier": "review",
@@ -5126,7 +5037,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=3",
       "sourceJobId": "13162214",
       "postedAt": "2026-02-23T12:19:01.620",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 26,
       "matchTier": "review",
@@ -5168,7 +5079,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=3",
       "sourceJobId": "13236450",
       "postedAt": "2026-07-06T09:19:38.691",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 26,
       "matchTier": "review",
@@ -5210,7 +5121,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=2",
       "sourceJobId": "13254112",
       "postedAt": "2026-08-12T12:15:07.469",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 26,
       "matchTier": "review",
@@ -5252,7 +5163,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=2",
       "sourceJobId": "13241049",
       "postedAt": "2026-07-15T10:10:34.181",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 26,
       "matchTier": "review",
@@ -5294,55 +5205,13 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=3",
       "sourceJobId": "13259934",
       "postedAt": "2026-08-25T12:38:25.227",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 26,
       "matchTier": "review",
       "id": "6f51e50505a435",
       "missingChecks": 0,
       "sourceId": "willhaben-region-3"
-    },
-    {
-      "title": "Müllaufleger (Lader) mit C-Schein",
-      "company": "Saubermacher AG",
-      "location": "Feldbach",
-      "distanceKm": 14,
-      "driveMinutes": 18,
-      "distanceEstimated": false,
-      "employmentType": [
-        "Vollzeit"
-      ],
-      "schedule": "Vollzeit · genaue Zeiten laut Inserat",
-      "morningFriendly": false,
-      "weekendRequired": false,
-      "salary": "ab € 2 190 brutto/Monat",
-      "description": "Mitarbeiter:in ab sofort",
-      "fitReasons": [
-        "Kurze Fahrt von ungefähr 18 Minuten"
-      ],
-      "concerns": [
-        "Vormittagszeiten müssen direkt abgeklärt werden"
-      ],
-      "requirements": [
-        "Anforderungen bitte in der Originalanzeige prüfen"
-      ],
-      "tasks": [
-        "Mitarbeiter:in ab sofort"
-      ],
-      "source": "willhaben – Südoststeiermark Seite 1",
-      "sourceUrl": "https://www.willhaben.at/jobs/job/muellaufleger-lader-mit-c-schein/13263650",
-      "applyUrl": "https://www.willhaben.at/jobs/job/muellaufleger-lader-mit-c-schein/13263650",
-      "provider": "willhaben.at",
-      "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark",
-      "sourceJobId": "13263650",
-      "postedAt": "2026-09-03T09:36:20.220",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
-      "status": "uncertain",
-      "fitScore": 26,
-      "matchTier": "review",
-      "id": "4079bf11f20e90",
-      "missingChecks": 2,
-      "sourceId": "willhaben-region-1"
     },
     {
       "title": "Lehrling Betriebslogistikkaufmann (alle Geschlechter)",
@@ -5378,7 +5247,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=3",
       "sourceJobId": "13219322",
       "postedAt": "2026-06-02T10:26:15.618",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 26,
       "matchTier": "review",
@@ -5413,20 +5282,20 @@
       "tasks": [
         "Aufgaben bitte in der Originalanzeige prüfen"
       ],
-      "source": "willhaben – Südoststeiermark Seite 2",
+      "source": "willhaben – Südoststeiermark Seite 3",
       "sourceUrl": "https://www.willhaben.at/jobs/job/lehrling-einzelhandel-schwerpunkt-baustoffe-alle-geschlechter/13219327",
       "applyUrl": "https://www.willhaben.at/jobs/job/lehrling-einzelhandel-schwerpunkt-baustoffe-alle-geschlechter/13219327",
       "provider": "willhaben.at",
-      "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=2",
+      "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=3",
       "sourceJobId": "13219327",
       "postedAt": "2026-06-02T10:27:42.077",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 26,
       "matchTier": "review",
       "id": "69cb3c96fd7afd",
       "missingChecks": 0,
-      "sourceId": "willhaben-region-2"
+      "sourceId": "willhaben-region-3"
     },
     {
       "title": "Kommissionier:in (m/w/d) für Getränkeherstellung",
@@ -5462,7 +5331,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=2",
       "sourceJobId": "13222932",
       "postedAt": "2026-06-09T22:32:14.925",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 26,
       "matchTier": "review",
@@ -5502,7 +5371,7 @@
       "applyUrl": "https://www.jobs.at/i/7870696",
       "provider": "jobs.at",
       "discoveryUrl": "https://www.jobs.at/j/-/feldbach",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 26,
       "matchTier": "review",
@@ -5681,7 +5550,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=2",
       "sourceJobId": "13263123",
       "postedAt": "2026-09-02T10:18:54",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 26,
       "matchTier": "review",
@@ -5723,7 +5592,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=2",
       "sourceJobId": "13263118",
       "postedAt": "2026-09-02T10:16:45.917",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 26,
       "matchTier": "review",
@@ -5765,7 +5634,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=2",
       "sourceJobId": "13268679",
       "postedAt": "2026-09-16T16:38:43.692",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 26,
       "matchTier": "review",
@@ -5807,7 +5676,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark",
       "sourceJobId": "13263780",
       "postedAt": "2026-09-03T11:11:41.152",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 26,
       "matchTier": "review",
@@ -5849,7 +5718,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=4",
       "sourceJobId": "13265132",
       "postedAt": "2026-09-07T12:52:28.824",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 26,
       "matchTier": "review",
@@ -5891,7 +5760,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=4",
       "sourceJobId": "13265130",
       "postedAt": "2026-09-07T12:52:05.440",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 26,
       "matchTier": "review",
@@ -5933,7 +5802,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=4",
       "sourceJobId": "13265127",
       "postedAt": "2026-09-07T12:51:38.295",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 26,
       "matchTier": "review",
@@ -5975,7 +5844,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=4",
       "sourceJobId": "13265126",
       "postedAt": "2026-09-07T12:51:18.797",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 26,
       "matchTier": "review",
@@ -6017,7 +5886,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=4",
       "sourceJobId": "13265125",
       "postedAt": "2026-09-07T12:51:10.660",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 26,
       "matchTier": "review",
@@ -6059,7 +5928,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=3",
       "sourceJobId": "13266925",
       "postedAt": "2026-09-11T09:33:44.511",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 26,
       "matchTier": "review",
@@ -6101,7 +5970,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=4",
       "sourceJobId": "13267860",
       "postedAt": "2026-09-14T16:07:16.020",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 26,
       "matchTier": "review",
@@ -6143,7 +6012,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=3",
       "sourceJobId": "13270627",
       "postedAt": "2026-09-22T09:33:37.593",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 26,
       "matchTier": "review",
@@ -6185,7 +6054,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=3",
       "sourceJobId": "13270549",
       "postedAt": "2026-09-22T09:04:00.442",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 26,
       "matchTier": "review",
@@ -6228,7 +6097,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark",
       "sourceJobId": "13161096",
       "postedAt": "2026-02-19T09:09:28.590",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 26,
       "matchTier": "review",
@@ -6270,7 +6139,7 @@
       "applyUrl": "https://www.karriere.at/jobs/10034369",
       "provider": "karriere.at",
       "discoveryUrl": "https://www.karriere.at/jobs/sekretariat/feldbach",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 26,
       "matchTier": "review",
@@ -6312,7 +6181,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark?page=2",
       "sourceJobId": "13274013",
       "postedAt": "2026-09-30T14:47:30.089",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 26,
       "matchTier": "review",
@@ -6354,7 +6223,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark",
       "sourceJobId": "13274709",
       "postedAt": "2026-10-01T16:10:00.549",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 26,
       "matchTier": "review",
@@ -6396,7 +6265,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark",
       "sourceJobId": "13274708",
       "postedAt": "2026-10-01T16:09:52.230",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 26,
       "matchTier": "review",
@@ -6438,7 +6307,7 @@
       "discoveryUrl": "https://www.willhaben.at/jobs/suche/suedoststeiermark",
       "sourceJobId": "13274707",
       "postedAt": "2026-10-01T16:09:40.942",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "fitScore": 26,
       "matchTier": "review",
@@ -6479,7 +6348,7 @@
       "provider": "GO GNAS",
       "discoveryUrl": "https://www.gnas.gv.at/sites/freie-arbeitsstellen",
       "sourceJobId": "pflegeassistentin-pflegefachassistentin",
-      "checkedAt": "2026-10-03T09:52:01.010Z",
+      "checkedAt": "2026-10-04T10:34:53.100Z",
       "status": "active",
       "description": "PflegeassistentIn, PflegefachassistentIn Firma: Gnesaha Pflege GmbH 8342 Gnas 114 Ansprechperson: Mag. Kampus Ivanka Tel.: 03151 / 20 186 14 i.kampus@gnesaha.at",
       "contact": {
